@@ -1,0 +1,1015 @@
+2018-06-30T00:09:04.4996883+05:45  [INF] Starting @angular/cli on port 39717... (65e66072)
+2018-06-30T00:09:06.1203157+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=QuickApp " (9958f5bb)
+2018-06-30T00:09:06.9767334+05:45  [FTL] Error whilst creating and seeding database (944fb156)
+System.AggregateException: One or more errors occurred. (Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.) ---> System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at NGGPMS.Program.Main(String[] args) in F:\ASPDOTNETCORE\NGGPMS\NGGPMS\Program.cs:line 35
+---> (Inner Exception #0) System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'QuickApp, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+
+<---
+
+2018-06-30T00:09:20.5223822+05:45  [INF] > cdk-admin-v2@0.0.0 start F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp
+> ng serve "--port" "39717"
+
+** Angular Live Development Server is listening on localhost:39717, open your browser on http://localhost:39717/ **
+ (9f3706b2)
+2018-06-30T00:10:08.5497590+05:45  [INF] Date: 2018-06-29T18:25:08.088Z
+Hash: 94e5ca4ac440b6b9f1a2
+Time: 47209ms
+chunk {auth-auth-module} auth-auth-module.js, auth-auth-module.js.map (auth-auth-module) 12.7 kB  [rendered]
+chunk {charts-charts-module} charts-charts-module.js, charts-charts-module.js.map (charts-charts-module) 2.91 MB  [rendered]
+chunk {charts-charts-module~dashboard-crm-dashboard-crm-module} charts-charts-module~dashboard-crm-dashboard-crm-module.js, charts-charts-module~dashboard-crm-dashboard-crm-module.js.map (charts-charts-module~dashboard-crm-dashboard-crm-module) 920 kB  [rendered]
+chunk {chats-chat-module} chats-chat-module.js, chats-chat-module.js.map (chats-chat-module) 1 MB  [rendered]
+chunk {chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module} chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module.js, chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module.js.map (chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module) 847 kB  [rendered]
+chunk {common} common.js, common.js.map (common) 11 kB  [rendered]
+chunk {dashboard-accounts-dashboard-accounts-module} dashboard-accounts-dashboard-accounts-module.js, dashboard-accounts-dashboard-accounts-module.js.map (dashboard-accounts-dashboard-accounts-module) 7.06 kB  [rendered]
+chunk {dashboard-crm-dashboard-crm-module} dashboard-crm-dashboard-crm-module.js, dashboard-crm-dashboard-crm-module.js.map (dashboard-crm-dashboard-crm-module) 732 kB  [rendered]
+chunk {editor-editor-module} editor-editor-module.js, editor-editor-module.js.map (editor-editor-module) 6.64 kB  [rendered]
+chunk {editor-editor-module~mail-mail-module} editor-editor-module~mail-mail-module.js, editor-editor-module~mail-mail-module.js.map (editor-editor-module~mail-mail-module) 449 kB  [rendered]
+chunk {forms-forms-module} forms-forms-module.js, forms-forms-module.js.map (forms-forms-module) 23.9 kB  [rendered]
+chunk {guarded-routes-guarded-routes-module} guarded-routes-guarded-routes-module.js, guarded-routes-guarded-routes-module.js.map (guarded-routes-guarded-routes-module) 21.6 kB  [rendered]
+chunk {mail-mail-module} mail-mail-module.js, mail-mail-module.js.map (mail-mail-module) 462 kB  [rendered]
+chunk {main} main.js, main.js.map (main) 83.6 kB [initial] [rendered]
+chunk {maps-maps-module} maps-maps-module.js, maps-maps-module.js.map (maps-maps-module) 583 kB  [rendered]
+chunk {material-widgets-material-widgets-module} material-widgets-material-widgets-module.js, material-widgets-material-widgets-module.js.map (material-widgets-material-widgets-module) 241 kB  [rendered]
+chunk {pages-login-login-module} pages-login-login-module.js, pages-login-login-module.js.map (pages-login-login-module) 11.8 kB  [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 31 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 226 kB [initial] [rendered]
+chunk {register-register-module} register-register-module.js, register-register-module.js.map (register-register-module) 5.4 kB  [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 9.25 kB [entry] [rendered]
+chunk {scrumboard-scrumboard-module} scrumboard-scrumboard-module.js, scrumboard-scrumboard-module.js.map (scrumboard-scrumboard-module) 62.5 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 102 kB [initial] [rendered]
+chunk {tables-tables-module} tables-tables-module.js, tables-tables-module.js.map (tables-tables-module) 93.5 kB  [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 6.95 MB [initial] [rendered]
+i ∩╜ówdm∩╜ú: Compiled successfully.
+ (036d30aa)
+2018-06-30T00:11:12.6024791+05:45 0HLETTN5D6O5R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-30T00:11:14.7661187+05:45 0HLETTN5D6O5R:00000001 [INF] Request finished in 2175.8289ms 200 text/html; charset=UTF-8 (791a596a)
+2018-06-30T00:11:14.7826049+05:45 0HLETTN5D6O5R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-30T00:11:14.7839232+05:45 0HLETTN5D6O5Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-30T00:11:14.7851832+05:45 0HLETTN5D6O5S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-30T00:11:14.7862383+05:45 0HLETTN5D6O5T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-30T00:11:14.7878711+05:45 0HLETTN5D6O5U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-30T00:11:14.9456183+05:45 0HLETTN5D6O5T:00000001 [INF] Request finished in 159.2867ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:11:15.8348854+05:45 0HLETTN5D6O5S:00000001 [INF] Request finished in 1049.6942ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:11:15.8405525+05:45 0HLETTN5D6O5R:00000002 [INF] Request finished in 1058.0324ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:11:15.8407885+05:45 0HLETTN5D6O5U:00000001 [INF] Request finished in 1052.944ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:11:15.8417107+05:45 0HLETTN5D6O5Q:00000001 [INF] Request finished in 1057.78ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:11:17.4195550+05:45 0HLETTN5D6O5Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/auth-auth-module.js   (ca22a1cb)
+2018-06-30T00:11:17.4298826+05:45 0HLETTN5D6O5Q:00000002 [INF] Request finished in 10.3368ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:11:17.9394925+05:45 0HLETTN5D6O5Q:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/charts-charts-module~dashboard-crm-dashboard-crm-module.js   (ca22a1cb)
+2018-06-30T00:11:17.9405597+05:45 0HLETTN5D6O5U:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/common.js   (ca22a1cb)
+2018-06-30T00:11:17.9411490+05:45 0HLETTN5D6O5R:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/dashboard-crm-dashboard-crm-module.js   (ca22a1cb)
+2018-06-30T00:11:17.9415938+05:45 0HLETTN5D6O5S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1530296777522   (ca22a1cb)
+2018-06-30T00:11:18.1286807+05:45 0HLETTN5D6O5U:00000002 [INF] Request finished in 188.144ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:11:18.1338745+05:45 0HLETTN5D6O5R:00000003 [INF] Request finished in 192.6903ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:11:18.1831576+05:45 0HLETTN5D6O5Q:00000003 [INF] Request finished in 243.7134ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:11:18.1897536+05:45 0HLETTN5D6O5S:00000002 [INF] Request finished in 248.1116ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:11:18.1957829+05:45 0HLETTN5D6O5V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/539/n5pbxqds/websocket   (ca22a1cb)
+2018-06-30T00:11:18.1990465+05:45 0HLETTN5D6O5V:00000001 [INF] Policy execution successful. (0204925d)
+2018-06-30T00:11:19.0416984+05:45 0HLETTN5D6O5Q:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/logo.png   (ca22a1cb)
+2018-06-30T00:11:19.0423899+05:45 0HLETTN5D6O5S:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/user-image.jpg   (ca22a1cb)
+2018-06-30T00:11:19.0478615+05:45 0HLETTN5D6O5S:00000003 [INF] Request finished in 5.3764ms 200 image/jpeg; charset=UTF-8 (791a596a)
+2018-06-30T00:11:19.0494322+05:45 0HLETTN5D6O5Q:00000004 [INF] Request finished in 7.7431ms 200 image/png; charset=UTF-8 (791a596a)
+2018-06-30T00:11:19.6299369+05:45 0HLETTN5D6O5Q:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/bg/city1.jpg   (ca22a1cb)
+2018-06-30T00:11:19.6383302+05:45 0HLETTN5D6O5Q:00000005 [INF] Request finished in 8.3786ms 200 image/jpeg; charset=UTF-8 (791a596a)
+2018-06-30T00:11:19.7819801+05:45 0HLETTN5D6O5Q:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/avatars/ganesh.jpg   (ca22a1cb)
+2018-06-30T00:11:19.7823516+05:45 0HLETTN5D6O5S:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/avatars/friend1.jpeg   (ca22a1cb)
+2018-06-30T00:11:19.7881107+05:45 0HLETTN5D6O5S:00000004 [INF] Request finished in 4.0306ms 200 image/jpeg; charset=UTF-8 (791a596a)
+2018-06-30T00:11:19.7893822+05:45 0HLETTN5D6O5Q:00000006 [INF] Request finished in 7.4573ms 200 image/jpeg; charset=UTF-8 (791a596a)
+2018-06-30T00:14:01.8949512+05:45 0HLETTN5D6O5V:00000001 [INF] Request finished in 163699.3243ms 101  (791a596a)
+2018-06-30T00:14:12.6039173+05:45 0HLETTN5D6O60:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-30T00:14:13.6257409+05:45 0HLETTN5D6O60:00000001 [INF] Request finished in 1021.488ms 304  (791a596a)
+2018-06-30T00:14:13.6976098+05:45 0HLETTN5D6O60:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-30T00:14:13.6979031+05:45 0HLETTN5D6O61:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-30T00:14:13.6981680+05:45 0HLETTN5D6O62:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-30T00:14:13.6988458+05:45 0HLETTN5D6O64:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-30T00:14:13.6988458+05:45 0HLETTN5D6O63:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-30T00:14:13.7201164+05:45 0HLETTN5D6O63:00000001 [INF] Request finished in 21.2386ms 304  (791a596a)
+2018-06-30T00:14:14.7040382+05:45 0HLETTN5D6O64:00000001 [INF] Request finished in 1005.1826ms 304  (791a596a)
+2018-06-30T00:14:14.7060849+05:45 0HLETTN5D6O61:00000001 [INF] Request finished in 1008.1697ms 304  (791a596a)
+2018-06-30T00:14:14.7116040+05:45 0HLETTN5D6O62:00000001 [INF] Request finished in 1013.3702ms 304  (791a596a)
+2018-06-30T00:14:14.7125711+05:45 0HLETTN5D6O60:00000002 [INF] Request finished in 1014.9355ms 304  (791a596a)
+2018-06-30T00:14:16.3100758+05:45 0HLETTN5D6O60:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/auth-auth-module.js   (ca22a1cb)
+2018-06-30T00:14:16.3132549+05:45 0HLETTN5D6O60:00000003 [INF] Request finished in 3.196ms 304  (791a596a)
+2018-06-30T00:14:16.3853185+05:45 0HLETTN5D6O60:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/charts-charts-module~dashboard-crm-dashboard-crm-module.js   (ca22a1cb)
+2018-06-30T00:14:16.3860798+05:45 0HLETTN5D6O62:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/common.js   (ca22a1cb)
+2018-06-30T00:14:16.3875399+05:45 0HLETTN5D6O61:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/dashboard-crm-dashboard-crm-module.js   (ca22a1cb)
+2018-06-30T00:14:16.3917358+05:45 0HLETTN5D6O62:00000002 [INF] Request finished in 5.6302ms 304  (791a596a)
+2018-06-30T00:14:16.3941768+05:45 0HLETTN5D6O62:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1530296956389   (ca22a1cb)
+2018-06-30T00:14:16.3983149+05:45 0HLETTN5D6O60:00000004 [INF] Request finished in 13.0297ms 304  (791a596a)
+2018-06-30T00:14:16.3993172+05:45 0HLETTN5D6O61:00000002 [INF] Request finished in 11.8115ms 304  (791a596a)
+2018-06-30T00:14:16.4035958+05:45 0HLETTN5D6O62:00000003 [INF] Request finished in 9.4333ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:14:16.4082754+05:45 0HLETTN5D6O66:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/980/o1bxz2xm/websocket   (ca22a1cb)
+2018-06-30T00:14:16.4084976+05:45 0HLETTN5D6O66:00000001 [INF] Policy execution successful. (0204925d)
+2018-06-30T00:14:16.9541659+05:45 0HLETTN5D6O62:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/logo.png   (ca22a1cb)
+2018-06-30T00:14:16.9547783+05:45 0HLETTN5D6O61:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/user-image.jpg   (ca22a1cb)
+2018-06-30T00:14:16.9627708+05:45 0HLETTN5D6O61:00000003 [INF] Request finished in 7.94ms 304  (791a596a)
+2018-06-30T00:14:16.9642406+05:45 0HLETTN5D6O62:00000004 [INF] Request finished in 10.0915ms 304  (791a596a)
+2018-06-30T00:14:17.7821725+05:45 0HLETTN5D6O62:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/bg/city1.jpg   (ca22a1cb)
+2018-06-30T00:14:17.7850494+05:45 0HLETTN5D6O62:00000005 [INF] Request finished in 2.9062ms 304  (791a596a)
+2018-06-30T00:14:17.9422784+05:45 0HLETTN5D6O62:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/avatars/ganesh.jpg   (ca22a1cb)
+2018-06-30T00:14:17.9431148+05:45 0HLETTN5D6O61:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/avatars/friend1.jpeg   (ca22a1cb)
+2018-06-30T00:14:17.9459712+05:45 0HLETTN5D6O62:00000006 [INF] Request finished in 3.7128ms 304  (791a596a)
+2018-06-30T00:14:17.9470566+05:45 0HLETTN5D6O61:00000004 [INF] Request finished in 3.9342ms 304  (791a596a)
+2018-06-30T00:14:18.7669490+05:45 0HLETTN5D6O61:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:43880/sockjs-node/980/snmcmhhl/xhr_streaming?t=1530296958763  0 (ca22a1cb)
+2018-06-30T00:14:18.7670458+05:45 0HLETTN5D6O61:00000005 [INF] Policy execution successful. (0204925d)
+2018-06-30T00:14:34.0167442+05:45 0HLETTN5D6O61:00000005 [INF] Request finished in 15249.8258ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:14:34.0361646+05:45 0HLETTN5D6O61:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:43880/sockjs-node/980/snmcmhhl/xhr_streaming?t=1530296974031  0 (ca22a1cb)
+2018-06-30T00:14:34.0362312+05:45 0HLETTN5D6O61:00000006 [INF] Policy execution successful. (0204925d)
+2018-06-30T00:14:34.0375895+05:45 0HLETTN5D6O61:00000006 [INF] Request finished in 1.3084ms 200  (791a596a)
+2018-06-30T00:14:34.0812313+05:45 0HLETTN5D6O66:00000001 [INF] Request finished in 17672.9545ms 101  (791a596a)
+2018-06-30T00:15:46.6116524+05:45  [INF] Starting @angular/cli on port 40459... (6bc7a340)
+2018-06-30T00:15:47.2030038+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=QuickApp " (9958f5bb)
+2018-06-30T00:15:47.3204225+05:45  [FTL] Error whilst creating and seeding database (944fb156)
+System.AggregateException: One or more errors occurred. (Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.) ---> System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at NGGPMS.Program.Main(String[] args) in F:\ASPDOTNETCORE\NGGPMS\NGGPMS\Program.cs:line 35
+---> (Inner Exception #0) System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'QuickApp, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+
+<---
+
+2018-06-30T00:15:49.7875067+05:45 0HLETTPO35CIC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1530297049700   (ca22a1cb)
+2018-06-30T00:15:56.5603181+05:45  [INF] > cdk-admin-v2@0.0.0 start F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp
+> ng serve "--port" "40459"
+
+** Angular Live Development Server is listening on localhost:40459, open your browser on http://localhost:40459/ **
+ (3acda636)
+2018-06-30T00:16:12.8149338+05:45 0HLETTPO35CIC:00000001 [INF] Request finished in 23038.6973ms 0  (791a596a)
+2018-06-30T00:16:44.9844130+05:45  [INF] Date: 2018-06-29T18:31:44.742Z
+Hash: 94e5ca4ac440b6b9f1a2
+Time: 47975ms
+chunk {auth-auth-module} auth-auth-module.js, auth-auth-module.js.map (auth-auth-module) 12.7 kB  [rendered]
+chunk {charts-charts-module} charts-charts-module.js, charts-charts-module.js.map (charts-charts-module) 2.91 MB  [rendered]
+chunk {charts-charts-module~dashboard-crm-dashboard-crm-module} charts-charts-module~dashboard-crm-dashboard-crm-module.js, charts-charts-module~dashboard-crm-dashboard-crm-module.js.map (charts-charts-module~dashboard-crm-dashboard-crm-module) 920 kB  [rendered]
+chunk {chats-chat-module} chats-chat-module.js, chats-chat-module.js.map (chats-chat-module) 1 MB  [rendered]
+chunk {chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module} chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module.js, chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module.js.map (chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module) 847 kB  [rendered]
+chunk {common} common.js, common.js.map (common) 11 kB  [rendered]
+chunk {dashboard-accounts-dashboard-accounts-module} dashboard-accounts-dashboard-accounts-module.js, dashboard-accounts-dashboard-accounts-module.js.map (dashboard-accounts-dashboard-accounts-module) 7.06 kB  [rendered]
+chunk {dashboard-crm-dashboard-crm-module} dashboard-crm-dashboard-crm-module.js, dashboard-crm-dashboard-crm-module.js.map (dashboard-crm-dashboard-crm-module) 732 kB  [rendered]
+chunk {editor-editor-module} editor-editor-module.js, editor-editor-module.js.map (editor-editor-module) 6.64 kB  [rendered]
+chunk {editor-editor-module~mail-mail-module} editor-editor-module~mail-mail-module.js, editor-editor-module~mail-mail-module.js.map (editor-editor-module~mail-mail-module) 449 kB  [rendered]
+chunk {forms-forms-module} forms-forms-module.js, forms-forms-module.js.map (forms-forms-module) 23.9 kB  [rendered]
+chunk {guarded-routes-guarded-routes-module} guarded-routes-guarded-routes-module.js, guarded-routes-guarded-routes-module.js.map (guarded-routes-guarded-routes-module) 21.6 kB  [rendered]
+chunk {mail-mail-module} mail-mail-module.js, mail-mail-module.js.map (mail-mail-module) 462 kB  [rendered]
+chunk {main} main.js, main.js.map (main) 83.6 kB [initial] [rendered]
+chunk {maps-maps-module} maps-maps-module.js, maps-maps-module.js.map (maps-maps-module) 583 kB  [rendered]
+chunk {material-widgets-material-widgets-module} material-widgets-material-widgets-module.js, material-widgets-material-widgets-module.js.map (material-widgets-material-widgets-module) 241 kB  [rendered]
+chunk {pages-login-login-module} pages-login-login-module.js, pages-login-login-module.js.map (pages-login-login-module) 11.8 kB  [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 31 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 226 kB [initial] [rendered]
+chunk {register-register-module} register-register-module.js, register-register-module.js.map (register-register-module) 5.4 kB  [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 9.25 kB [entry] [rendered]
+chunk {scrumboard-scrumboard-module} scrumboard-scrumboard-module.js, scrumboard-scrumboard-module.js.map (scrumboard-scrumboard-module) 62.5 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 102 kB [initial] [rendered]
+chunk {tables-tables-module} tables-tables-module.js, tables-tables-module.js.map (tables-tables-module) 93.5 kB  [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 6.95 MB [initial] [rendered]
+i ∩╜ówdm∩╜ú: Compiled successfully.
+ (98ea1977)
+2018-06-30T00:17:05.9263757+05:45 0HLETTPO35CID:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1530297125923   (ca22a1cb)
+2018-06-30T00:17:06.9663175+05:45 0HLETTPO35CID:00000001 [INF] Request finished in 1039.9044ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:17:06.9893126+05:45 0HLETTPO35CIE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/658/wnkw5xfp/websocket   (ca22a1cb)
+2018-06-30T00:17:06.9912161+05:45 0HLETTPO35CIE:00000001 [INF] Policy execution successful. (0204925d)
+2018-06-30T00:17:08.9479810+05:45 0HLETTPO35CID:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/auth/dashboard   (ca22a1cb)
+2018-06-30T00:17:08.9560464+05:45 0HLETTPO35CID:00000002 [INF] Request finished in 8.0324ms 200 text/html; charset=UTF-8 (791a596a)
+2018-06-30T00:17:08.9877504+05:45 0HLETTPO35CID:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-30T00:17:08.9928059+05:45 0HLETTPO35CIG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-30T00:17:08.9927935+05:45 0HLETTPO35CIH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-30T00:17:08.9933939+05:45 0HLETTPO35CII:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-30T00:17:08.9941441+05:45 0HLETTPO35CIF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-30T00:17:08.9967104+05:45 0HLETTPO35CID:00000003 [INF] Request finished in 8.9582ms 304  (791a596a)
+2018-06-30T00:17:08.9995762+05:45 0HLETTPO35CIF:00000001 [INF] Request finished in 6.8626ms 304  (791a596a)
+2018-06-30T00:17:09.0018246+05:45 0HLETTPO35CII:00000001 [INF] Request finished in 8.1195ms 304  (791a596a)
+2018-06-30T00:17:09.0671944+05:45 0HLETTPO35CIE:00000001 [INF] Request finished in 2077.8702ms 101  (791a596a)
+2018-06-30T00:17:09.9987584+05:45 0HLETTPO35CIG:00000001 [INF] Request finished in 1005.9524ms 304  (791a596a)
+2018-06-30T00:17:10.0191352+05:45 0HLETTPO35CIH:00000001 [INF] Request finished in 1026.3382ms 304  (791a596a)
+2018-06-30T00:17:11.4045137+05:45 0HLETTPO35CIH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/auth-auth-module.js   (ca22a1cb)
+2018-06-30T00:17:11.4070208+05:45 0HLETTPO35CIH:00000002 [INF] Request finished in 2.5142ms 304  (791a596a)
+2018-06-30T00:17:11.4863044+05:45 0HLETTPO35CIH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/charts-charts-module~dashboard-crm-dashboard-crm-module.js   (ca22a1cb)
+2018-06-30T00:17:11.4870399+05:45 0HLETTPO35CIG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/common.js   (ca22a1cb)
+2018-06-30T00:17:11.4877822+05:45 0HLETTPO35CII:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/dashboard-crm-dashboard-crm-module.js   (ca22a1cb)
+2018-06-30T00:17:11.4903271+05:45 0HLETTPO35CIG:00000002 [INF] Request finished in 3.2386ms 304  (791a596a)
+2018-06-30T00:17:11.4922782+05:45 0HLETTPO35CII:00000002 [INF] Request finished in 4.4546ms 304  (791a596a)
+2018-06-30T00:17:11.4951515+05:45 0HLETTPO35CIH:00000003 [INF] Request finished in 8.8595ms 304  (791a596a)
+2018-06-30T00:17:11.9691357+05:45 0HLETTPO35CIH:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/logo.png   (ca22a1cb)
+2018-06-30T00:17:11.9717668+05:45 0HLETTPO35CIH:00000004 [INF] Request finished in 2.6506ms 304  (791a596a)
+2018-06-30T00:17:12.0758526+05:45 0HLETTPO35CIH:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/user-image.jpg   (ca22a1cb)
+2018-06-30T00:17:12.0797957+05:45 0HLETTPO35CIH:00000005 [INF] Request finished in 3.9511ms 304  (791a596a)
+2018-06-30T00:17:12.5022519+05:45 0HLETTPO35CIH:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/bg/city1.jpg   (ca22a1cb)
+2018-06-30T00:17:12.5049289+05:45 0HLETTPO35CIH:00000006 [INF] Request finished in 2.7173ms 304  (791a596a)
+2018-06-30T00:17:12.6583777+05:45 0HLETTPO35CIH:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/avatars/ganesh.jpg   (ca22a1cb)
+2018-06-30T00:17:12.6583986+05:45 0HLETTPO35CII:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/avatars/friend1.jpeg   (ca22a1cb)
+2018-06-30T00:17:12.6610729+05:45 0HLETTPO35CIH:00000007 [INF] Request finished in 2.7062ms 304  (791a596a)
+2018-06-30T00:17:12.6620978+05:45 0HLETTPO35CII:00000003 [INF] Request finished in 3.2182ms 304  (791a596a)
+2018-06-30T00:17:12.6799022+05:45 0HLETTPO35CII:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1530297132676   (ca22a1cb)
+2018-06-30T00:17:12.6824351+05:45 0HLETTPO35CII:00000004 [INF] Request finished in 2.548ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:17:12.8697490+05:45 0HLETTPO35CIJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/498/xjrrrlcv/websocket   (ca22a1cb)
+2018-06-30T00:17:12.8699241+05:45 0HLETTPO35CIJ:00000001 [INF] Policy execution successful. (0204925d)
+2018-06-30T00:17:47.9878028+05:45 0HLETTPO35CII:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module.js   (ca22a1cb)
+2018-06-30T00:17:47.9885077+05:45 0HLETTPO35CIH:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:43880/material-widgets-material-widgets-module.js   (ca22a1cb)
+2018-06-30T00:17:49.0161925+05:45 0HLETTPO35CIH:00000008 [INF] Request finished in 1027.6022ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:17:49.0261121+05:45 0HLETTPO35CII:00000005 [INF] Request finished in 1038.3364ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:18:00.6655760+05:45 0HLETTPO35CII:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js.map   (ca22a1cb)
+2018-06-30T00:18:00.6674631+05:45 0HLETTPO35CIH:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js.map   (ca22a1cb)
+2018-06-30T00:18:00.6700387+05:45 0HLETTPO35CIG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js.map   (ca22a1cb)
+2018-06-30T00:18:00.7085973+05:45 0HLETTPO35CIF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/material-widgets-material-widgets-module.js.map   (ca22a1cb)
+2018-06-30T00:18:00.7105662+05:45 0HLETTPO35CID:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module.js.map   (ca22a1cb)
+2018-06-30T00:18:00.7480342+05:45 0HLETTPO35CIK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/auth-auth-module.js.map   (ca22a1cb)
+2018-06-30T00:18:01.6884769+05:45 0HLETTPO35CIG:00000003 [INF] Request finished in 1018.4528ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:18:01.6905360+05:45 0HLETTPO35CIG:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/common.js.map   (ca22a1cb)
+2018-06-30T00:18:01.6950986+05:45 0HLETTPO35CIG:00000004 [INF] Request finished in 4.5822ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:18:01.6960493+05:45 0HLETTPO35CIG:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/dashboard-crm-dashboard-crm-module.js.map   (ca22a1cb)
+2018-06-30T00:18:01.7609063+05:45 0HLETTPO35CIG:00000005 [INF] Request finished in 64.8573ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:18:01.7662915+05:45 0HLETTPO35CII:00000006 [INF] Request finished in 1100.7436ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:18:01.7671405+05:45 0HLETTPO35CIG:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/charts-charts-module~dashboard-crm-dashboard-crm-module.js.map   (ca22a1cb)
+2018-06-30T00:18:01.8078129+05:45 0HLETTPO35CII:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js.map   (ca22a1cb)
+2018-06-30T00:18:01.8277210+05:45 0HLETTPO35CID:00000004 [INF] Request finished in 1117.1422ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:18:01.8359987+05:45 0HLETTPO35CIK:00000001 [INF] Request finished in 1088.0133ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:18:01.8381267+05:45 0HLETTPO35CIF:00000002 [INF] Request finished in 1129.5178ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:18:01.8445170+05:45 0HLETTPO35CIK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js.map   (ca22a1cb)
+2018-06-30T00:18:01.8949938+05:45 0HLETTPO35CIG:00000006 [INF] Request finished in 127.8422ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:18:01.9017525+05:45 0HLETTPO35CII:00000007 [INF] Request finished in 94.0609ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:18:01.9686739+05:45 0HLETTPO35CIK:00000002 [INF] Request finished in 124.1307ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:18:01.9871450+05:45 0HLETTPO35CIH:00000009 [INF] Request finished in 1319.6819ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:18:22.8429419+05:45 0HLETTPO35CIH:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:43880/scrumboard-scrumboard-module.js   (ca22a1cb)
+2018-06-30T00:18:23.8481289+05:45 0HLETTPO35CIH:0000000A [INF] Request finished in 1005.1991ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:18:23.9794917+05:45 0HLETTPO35CIH:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:43880/scrumboard-scrumboard-module.js.map   (ca22a1cb)
+2018-06-30T00:18:23.9885197+05:45 0HLETTPO35CIH:0000000B [INF] Request finished in 9.0168ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:18:44.8174832+05:45 0HLETTPO35CIH:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:43880/chats-chat-module.js   (ca22a1cb)
+2018-06-30T00:18:45.8376956+05:45 0HLETTPO35CIH:0000000C [INF] Request finished in 1020.212ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:18:48.2905767+05:45 0HLETTPO35CIH:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/man.jpeg   (ca22a1cb)
+2018-06-30T00:18:48.2915749+05:45 0HLETTPO35CIK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/profile.jpg   (ca22a1cb)
+2018-06-30T00:18:48.2962816+05:45 0HLETTPO35CIK:00000003 [INF] Request finished in 4.6768ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:18:49.3010558+05:45 0HLETTPO35CIH:0000000D [INF] Request finished in 1010.5244ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:18:51.4932813+05:45 0HLETTPO35CIH:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/profile.jpg   (ca22a1cb)
+2018-06-30T00:18:51.4967173+05:45 0HLETTPO35CIH:0000000E [INF] Request finished in 3.3933ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:18:52.9367734+05:45 0HLETTPO35CIH:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/man.jpeg   (ca22a1cb)
+2018-06-30T00:18:52.9402805+05:45 0HLETTPO35CIH:0000000F [INF] Request finished in 3.52ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:18:54.0979633+05:45 0HLETTPO35CIH:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/profile.jpg   (ca22a1cb)
+2018-06-30T00:18:54.1019455+05:45 0HLETTPO35CIH:00000010 [INF] Request finished in 3.9773ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:19:00.3149629+05:45 0HLETTPO35CIH:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:43880/editor-editor-module~mail-mail-module.js   (ca22a1cb)
+2018-06-30T00:19:00.3154185+05:45 0HLETTPO35CIK:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/mail-mail-module.js   (ca22a1cb)
+2018-06-30T00:19:01.3260256+05:45 0HLETTPO35CIK:00000004 [INF] Request finished in 1010.6097ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:19:01.3385087+05:45 0HLETTPO35CIH:00000011 [INF] Request finished in 1023.5288ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:19:01.8150143+05:45 0HLETTPO35CIH:00000012 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/list.json   (ca22a1cb)
+2018-06-30T00:19:01.8178943+05:45 0HLETTPO35CIH:00000012 [INF] Request finished in 2.9022ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T00:19:01.8434787+05:45 0HLETTPO35CIH:00000013 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/bg20.jpg   (ca22a1cb)
+2018-06-30T00:19:01.8774886+05:45 0HLETTPO35CIH:00000013 [INF] Request finished in 34.0035ms 200 image/jpeg; charset=UTF-8 (791a596a)
+2018-06-30T00:19:02.0696286+05:45 0HLETTPO35CIH:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/profile.jpg   (ca22a1cb)
+2018-06-30T00:19:02.0729059+05:45 0HLETTPO35CIH:00000014 [INF] Request finished in 3.3ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:19:49.0329464+05:45 0HLETTPO35CIH:00000015 [INF] Request starting HTTP/1.1 GET http://localhost:43880/guarded-routes-guarded-routes-module.js   (ca22a1cb)
+2018-06-30T00:19:50.0382766+05:45 0HLETTPO35CIH:00000015 [INF] Request finished in 1005.3751ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:19:50.7833800+05:45 0HLETTPO35CIH:00000016 [INF] Request starting HTTP/1.1 GET http://localhost:43880/tables-tables-module.js   (ca22a1cb)
+2018-06-30T00:19:50.7937076+05:45 0HLETTPO35CIH:00000016 [INF] Request finished in 10.3213ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:20:48.2487683+05:45 0HLETTPO35CIH:00000017 [INF] Request starting HTTP/1.1 GET http://localhost:43880/pages-login-login-module.js   (ca22a1cb)
+2018-06-30T00:20:49.2566074+05:45 0HLETTPO35CIH:00000017 [INF] Request finished in 1007.9471ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:20:49.4140990+05:45 0HLETTPO35CIH:00000018 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/login11.jpg   (ca22a1cb)
+2018-06-30T00:20:49.4190763+05:45 0HLETTPO35CIH:00000018 [INF] Request finished in 4.92ms 200 image/jpeg; charset=UTF-8 (791a596a)
+2018-06-30T00:21:10.2234265+05:45 0HLETTPO35CIH:00000019 [INF] Request starting HTTP/1.1 GET http://localhost:43880/maps-maps-module.js   (ca22a1cb)
+2018-06-30T00:21:11.2373736+05:45 0HLETTPO35CIH:00000019 [INF] Request finished in 1013.8595ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:21:20.8874979+05:45 0HLETTPO35CIH:0000001A [INF] Request starting HTTP/1.1 GET http://localhost:43880/marker-icon.png   (ca22a1cb)
+2018-06-30T00:21:20.8889325+05:45 0HLETTPO35CIL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/marker-shadow.png   (ca22a1cb)
+2018-06-30T00:21:21.8976556+05:45 0HLETTPO35CIL:00000001 [INF] Request finished in 1008.7853ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:21:21.9045885+05:45 0HLETTPO35CIH:0000001A [INF] Request finished in 1017.1097ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:21:33.7970254+05:45 0HLETTPO35CIH:0000001B [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/list.json   (ca22a1cb)
+2018-06-30T00:21:34.7643285+05:45 0HLETTPO35CIL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/editor-editor-module.js   (ca22a1cb)
+2018-06-30T00:21:34.8108494+05:45 0HLETTPO35CIH:0000001B [INF] Request finished in 1013.876ms 304  (791a596a)
+2018-06-30T00:21:34.9003872+05:45 0HLETTPO35CIH:0000001C [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/profile.jpg   (ca22a1cb)
+2018-06-30T00:21:34.9040624+05:45 0HLETTPO35CIH:0000001C [INF] Request finished in 3.6791ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:21:35.7689823+05:45 0HLETTPO35CIL:00000002 [INF] Request finished in 1004.6857ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T00:21:42.8513174+05:45 0HLETTPO35CIL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/list.json   (ca22a1cb)
+2018-06-30T00:21:43.8599406+05:45 0HLETTPO35CIL:00000003 [INF] Request finished in 1008.6351ms 304  (791a596a)
+2018-06-30T00:21:43.9211374+05:45 0HLETTPO35CIL:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/profile.jpg   (ca22a1cb)
+2018-06-30T00:21:43.9251307+05:45 0HLETTPO35CIL:00000004 [INF] Request finished in 4.0022ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:21:44.9841361+05:45 0HLETTPO35CIL:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/man.jpeg   (ca22a1cb)
+2018-06-30T00:21:44.9849775+05:45 0HLETTPO35CIH:0000001D [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/profile.jpg   (ca22a1cb)
+2018-06-30T00:21:44.9899126+05:45 0HLETTPO35CIH:0000001D [INF] Request finished in 4.9226ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:21:46.0048992+05:45 0HLETTPO35CIL:00000005 [INF] Request finished in 1020.78ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:21:48.2721682+05:45 0HLETTPO35CIL:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/profile.jpg   (ca22a1cb)
+2018-06-30T00:21:48.2797905+05:45 0HLETTPO35CIL:00000006 [INF] Request finished in 7.5764ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T00:22:17.5121697+05:45 0HLETTPO35CIJ:00000001 [INF] Request finished in 304642.414ms 101  (791a596a)
+2018-06-30T09:22:38.4687310+05:45  [INF] Starting @angular/cli on port 41676... (0de84466)
+2018-06-30T09:22:39.9260544+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=QuickApp " (9958f5bb)
+2018-06-30T09:22:40.5247306+05:45  [FTL] Error whilst creating and seeding database (944fb156)
+System.AggregateException: One or more errors occurred. (Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.) ---> System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at NGGPMS.Program.Main(String[] args) in F:\ASPDOTNETCORE\NGGPMS\NGGPMS\Program.cs:line 35
+---> (Inner Exception #0) System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'QuickApp, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+
+<---
+
+2018-06-30T09:23:22.7212911+05:45  [INF] > cdk-admin-v2@0.0.0 start F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp
+> ng serve "--port" "41676"
+
+** Angular Live Development Server is listening on localhost:41676, open your browser on http://localhost:41676/ **
+ (f39784c7)
+2018-06-30T09:24:33.2517469+05:45  [INF] Date: 2018-06-30T03:39:32.379Z
+Hash: 94e5ca4ac440b6b9f1a2
+Time: 68974ms
+chunk {auth-auth-module} auth-auth-module.js, auth-auth-module.js.map (auth-auth-module) 12.7 kB  [rendered]
+chunk {charts-charts-module} charts-charts-module.js, charts-charts-module.js.map (charts-charts-module) 2.91 MB  [rendered]
+chunk {charts-charts-module~dashboard-crm-dashboard-crm-module} charts-charts-module~dashboard-crm-dashboard-crm-module.js, charts-charts-module~dashboard-crm-dashboard-crm-module.js.map (charts-charts-module~dashboard-crm-dashboard-crm-module) 920 kB  [rendered]
+chunk {chats-chat-module} chats-chat-module.js, chats-chat-module.js.map (chats-chat-module) 1 MB  [rendered]
+chunk {chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module} chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module.js, chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module.js.map (chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module) 847 kB  [rendered]
+chunk {common} common.js, common.js.map (common) 11 kB  [rendered]
+chunk {dashboard-accounts-dashboard-accounts-module} dashboard-accounts-dashboard-accounts-module.js, dashboard-accounts-dashboard-accounts-module.js.map (dashboard-accounts-dashboard-accounts-module) 7.06 kB  [rendered]
+chunk {dashboard-crm-dashboard-crm-module} dashboard-crm-dashboard-crm-module.js, dashboard-crm-dashboard-crm-module.js.map (dashboard-crm-dashboard-crm-module) 732 kB  [rendered]
+chunk {editor-editor-module} editor-editor-module.js, editor-editor-module.js.map (editor-editor-module) 6.64 kB  [rendered]
+chunk {editor-editor-module~mail-mail-module} editor-editor-module~mail-mail-module.js, editor-editor-module~mail-mail-module.js.map (editor-editor-module~mail-mail-module) 449 kB  [rendered]
+chunk {forms-forms-module} forms-forms-module.js, forms-forms-module.js.map (forms-forms-module) 23.9 kB  [rendered]
+chunk {guarded-routes-guarded-routes-module} guarded-routes-guarded-routes-module.js, guarded-routes-guarded-routes-module.js.map (guarded-routes-guarded-routes-module) 21.6 kB  [rendered]
+chunk {mail-mail-module} mail-mail-module.js, mail-mail-module.js.map (mail-mail-module) 462 kB  [rendered]
+chunk {main} main.js, main.js.map (main) 83.6 kB [initial] [rendered]
+chunk {maps-maps-module} maps-maps-module.js, maps-maps-module.js.map (maps-maps-module) 583 kB  [rendered]
+chunk {material-widgets-material-widgets-module} material-widgets-material-widgets-module.js, material-widgets-material-widgets-module.js.map (material-widgets-material-widgets-module) 241 kB  [rendered]
+chunk {pages-login-login-module} pages-login-login-module.js, pages-login-login-module.js.map (pages-login-login-module) 11.8 kB  [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 31 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 226 kB [initial] [rendered]
+chunk {register-register-module} register-register-module.js, register-register-module.js.map (register-register-module) 5.4 kB  [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 9.25 kB [entry] [rendered]
+chunk {scrumboard-scrumboard-module} scrumboard-scrumboard-module.js, scrumboard-scrumboard-module.js.map (scrumboard-scrumboard-module) 62.5 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 102 kB [initial] [rendered]
+chunk {tables-tables-module} tables-tables-module.js, tables-tables-module.js.map (tables-tables-module) 93.5 kB  [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 6.95 MB [initial] [rendered]
+i ∩╜ówdm∩╜ú: Compiled successfully.
+ (48a0a15f)
+2018-06-30T09:25:48.9233098+05:45  [INF] Starting @angular/cli on port 41801... (d1549995)
+2018-06-30T09:25:49.5652186+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=QuickApp " (9958f5bb)
+2018-06-30T09:25:49.6332671+05:45  [FTL] Error whilst creating and seeding database (944fb156)
+System.AggregateException: One or more errors occurred. (Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.) ---> System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at NGGPMS.Program.Main(String[] args) in F:\ASPDOTNETCORE\NGGPMS\NGGPMS\Program.cs:line 35
+---> (Inner Exception #0) System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'QuickApp, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+
+<---
+
+2018-06-30T09:25:53.1945108+05:45  [ERR] Unknown option: '--extractCss'
+ (fe1a4bf6)
+2018-06-30T09:28:46.1437460+05:45  [INF] Starting @angular/cli on port 41852... (4987d631)
+2018-06-30T09:28:46.7352503+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=QuickApp " (9958f5bb)
+2018-06-30T09:28:46.8474796+05:45  [FTL] Error whilst creating and seeding database (944fb156)
+System.AggregateException: One or more errors occurred. (Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.) ---> System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at NGGPMS.Program.Main(String[] args) in F:\ASPDOTNETCORE\NGGPMS\NGGPMS\Program.cs:line 35
+---> (Inner Exception #0) System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'QuickApp, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+
+<---
+
+2018-06-30T09:28:50.6579862+05:45  [ERR] Schema validation failed with the following errors:
+ (bf468762)
+2018-06-30T09:28:50.6584728+05:45  [ERR]   Data path "['serve']" should NOT have additional properties(extractCss).
+Error: Schema validation failed with the following errors:
+ (57bf3a7c)
+2018-06-30T09:28:50.6983467+05:45  [ERR]   Data path "['serve']" should NOT have additional properties(extractCss).
+    at MergeMapSubscriber._registry.compile.pipe.operators_1.concatMap.validatorResult [as project] (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\src\workspace\workspace.js:173:42)
+    at MergeMapSubscriber._tryNext (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\operators\mergeMap.js:65:27)
+    at MergeMapSubscriber._next (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\operators\mergeMap.js:55:18)
+    at MergeMapSubscriber.Subscriber.next (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\Subscriber.js:64:18)
+    at MergeMapSubscriber.notifyNext (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\operators\mergeMap.js:84:26)
+    at InnerSubscriber._next (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\InnerSubscriber.js:25:21)
+    at InnerSubscriber.Subscriber.next (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\Subscriber.js:64:18)
+    at MapSubscriber._next (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\operators\map.js:52:26)
+    at MapSubscriber.Subscriber.next (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\Subscriber.js:64:18)
+    at SwitchMapSubscriber.notifyNext (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\operators\switchMap.js:77:26)
+npm ERR! code ELIFECYCLE
+ (dec2cfc7)
+2018-06-30T09:28:50.6998453+05:45  [ERR] npm ERR! errno 1
+npm ERR! cdk-admin-v2@0.0.0 start: `ng serve --extract-css "--port" "41852"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the cdk-admin-v2@0.0.0 start script.
+ (9c6cb826)
+2018-06-30T09:28:50.7875143+05:45  [ERR] npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+ (b030e860)
+2018-06-30T09:28:50.7877147+05:45  [ERR] npm ERR! A complete log of this run can be found in:
+ (e9dc2fc2)
+2018-06-30T09:28:50.7878596+05:45  [ERR] npm ERR!     C:\Users\user\AppData\Roaming\npm-cache\_logs\2018-06-30T03_43_50_703Z-debug.log
+ (4edcb58a)
+2018-06-30T09:30:13.7142626+05:45  [INF] Starting @angular/cli on port 41865... (121cbccb)
+2018-06-30T09:30:14.2654758+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=QuickApp " (9958f5bb)
+2018-06-30T09:30:14.3345198+05:45  [FTL] Error whilst creating and seeding database (944fb156)
+System.AggregateException: One or more errors occurred. (Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.) ---> System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at NGGPMS.Program.Main(String[] args) in F:\ASPDOTNETCORE\NGGPMS\NGGPMS\Program.cs:line 35
+---> (Inner Exception #0) System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'QuickApp, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+
+<---
+
+2018-06-30T09:30:17.0919624+05:45  [ERR] Schema validation failed with the following errors:
+ (bf468762)
+2018-06-30T09:30:17.0922455+05:45  [ERR]   Data path "['serve']" should NOT have additional properties(extractCss).
+Error: Schema validation failed with the following errors:
+ (57bf3a7c)
+2018-06-30T09:30:17.1102847+05:45  [ERR]   Data path "['serve']" should NOT have additional properties(extractCss).
+    at MergeMapSubscriber._registry.compile.pipe.operators_1.concatMap.validatorResult [as project] (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\src\workspace\workspace.js:173:42)
+    at MergeMapSubscriber._tryNext (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\operators\mergeMap.js:65:27)
+    at MergeMapSubscriber._next (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\operators\mergeMap.js:55:18)
+    at MergeMapSubscriber.Subscriber.next (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\Subscriber.js:64:18)
+    at MergeMapSubscriber.notifyNext (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\operators\mergeMap.js:84:26)
+    at InnerSubscriber._next (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\InnerSubscriber.js:25:21)
+    at InnerSubscriber.Subscriber.next (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\Subscriber.js:64:18)
+    at MapSubscriber._next (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\operators\map.js:52:26)
+    at MapSubscriber.Subscriber.next (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\Subscriber.js:64:18)
+    at SwitchMapSubscriber.notifyNext (F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\node_modules\@angular-devkit\core\node_modules\rxjs\internal\operators\switchMap.js:77:26)
+npm ERR! code ELIFECYCLE
+ (dec2cfc7)
+2018-06-30T09:30:17.1131420+05:45  [ERR] npm ERR! errno 1
+ (ed3606fd)
+2018-06-30T09:30:17.1143735+05:45  [ERR] npm ERR! cdk-admin-v2@0.0.0 start: `ng serve "--port" "41865"`
+ (0c19f14f)
+2018-06-30T09:30:17.1145967+05:45  [ERR] npm ERR! Exit status 1
+ (209de748)
+2018-06-30T09:30:17.1154846+05:45  [ERR] npm ERR! 
+ (8908d96b)
+2018-06-30T09:30:17.1166215+05:45  [ERR] npm ERR! Failed at the cdk-admin-v2@0.0.0 start script.
+ (54406b47)
+2018-06-30T09:30:17.1173242+05:45  [ERR] npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+ (c0d38988)
+2018-06-30T09:30:17.1784131+05:45  [ERR] npm ERR! A complete log of this run can be found in:
+ (e9dc2fc2)
+2018-06-30T09:31:25.4300505+05:45  [INF] Starting @angular/cli on port 41875... (e9df4b90)
+2018-06-30T09:31:26.0535611+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=QuickApp " (9958f5bb)
+2018-06-30T09:31:26.1199380+05:45  [FTL] Error whilst creating and seeding database (944fb156)
+System.AggregateException: One or more errors occurred. (Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.) ---> System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at NGGPMS.Program.Main(String[] args) in F:\ASPDOTNETCORE\NGGPMS\NGGPMS\Program.cs:line 35
+---> (Inner Exception #0) System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'QuickApp, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+
+<---
+
+2018-06-30T09:31:33.8116765+05:45  [INF] > cdk-admin-v2@0.0.0 start F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp
+> ng serve "--port" "41875"
+
+** Angular Live Development Server is listening on localhost:41875, open your browser on http://localhost:41875/ **
+ (92c9d10f)
+2018-06-30T09:32:26.9209850+05:45  [INF] Date: 2018-06-30T03:47:26.625Z
+Hash: 94e5ca4ac440b6b9f1a2
+Time: 52602ms
+chunk {auth-auth-module} auth-auth-module.js, auth-auth-module.js.map (auth-auth-module) 12.7 kB  [rendered]
+chunk {charts-charts-module} charts-charts-module.js, charts-charts-module.js.map (charts-charts-module) 2.91 MB  [rendered]
+chunk {charts-charts-module~dashboard-crm-dashboard-crm-module} charts-charts-module~dashboard-crm-dashboard-crm-module.js, charts-charts-module~dashboard-crm-dashboard-crm-module.js.map (charts-charts-module~dashboard-crm-dashboard-crm-module) 920 kB  [rendered]
+chunk {chats-chat-module} chats-chat-module.js, chats-chat-module.js.map (chats-chat-module) 1 MB  [rendered]
+chunk {chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module} chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module.js, chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module.js.map (chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module) 847 kB  [rendered]
+chunk {common} common.js, common.js.map (common) 11 kB  [rendered]
+chunk {dashboard-accounts-dashboard-accounts-module} dashboard-accounts-dashboard-accounts-module.js, dashboard-accounts-dashboard-accounts-module.js.map (dashboard-accounts-dashboard-accounts-module) 7.06 kB  [rendered]
+chunk {dashboard-crm-dashboard-crm-module} dashboard-crm-dashboard-crm-module.js, dashboard-crm-dashboard-crm-module.js.map (dashboard-crm-dashboard-crm-module) 732 kB  [rendered]
+chunk {editor-editor-module} editor-editor-module.js, editor-editor-module.js.map (editor-editor-module) 6.64 kB  [rendered]
+chunk {editor-editor-module~mail-mail-module} editor-editor-module~mail-mail-module.js, editor-editor-module~mail-mail-module.js.map (editor-editor-module~mail-mail-module) 449 kB  [rendered]
+chunk {forms-forms-module} forms-forms-module.js, forms-forms-module.js.map (forms-forms-module) 23.9 kB  [rendered]
+chunk {guarded-routes-guarded-routes-module} guarded-routes-guarded-routes-module.js, guarded-routes-guarded-routes-module.js.map (guarded-routes-guarded-routes-module) 21.6 kB  [rendered]
+chunk {mail-mail-module} mail-mail-module.js, mail-mail-module.js.map (mail-mail-module) 462 kB  [rendered]
+chunk {main} main.js, main.js.map (main) 83.6 kB [initial] [rendered]
+chunk {maps-maps-module} maps-maps-module.js, maps-maps-module.js.map (maps-maps-module) 583 kB  [rendered]
+chunk {material-widgets-material-widgets-module} material-widgets-material-widgets-module.js, material-widgets-material-widgets-module.js.map (material-widgets-material-widgets-module) 241 kB  [rendered]
+chunk {pages-login-login-module} pages-login-login-module.js, pages-login-login-module.js.map (pages-login-login-module) 11.8 kB  [rendered]
+chunk {pages-pages-module} pages-pages-module.js, pages-pages-module.js.map (pages-pages-module) 31 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 226 kB [initial] [rendered]
+chunk {register-register-module} register-register-module.js, register-register-module.js.map (register-register-module) 5.4 kB  [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 9.25 kB [entry] [rendered]
+chunk {scrumboard-scrumboard-module} scrumboard-scrumboard-module.js, scrumboard-scrumboard-module.js.map (scrumboard-scrumboard-module) 62.5 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 102 kB [initial] [rendered]
+chunk {tables-tables-module} tables-tables-module.js, tables-tables-module.js.map (tables-tables-module) 93.5 kB  [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 6.95 MB [initial] [rendered]
+i ∩╜ówdm∩╜ú: Compiled successfully.
+ (be9be45a)
+2018-06-30T09:32:29.2772549+05:45 0HLEU7GPRKANI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-30T09:32:31.1886296+05:45 0HLEU7GPRKANI:00000001 [INF] Request finished in 1925.875ms 304  (791a596a)
+2018-06-30T09:32:31.2167629+05:45 0HLEU7GPRKANI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-30T09:32:31.2167629+05:45 0HLEU7GPRKANJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-30T09:32:31.2198296+05:45 0HLEU7GPRKANM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-30T09:32:31.2228452+05:45 0HLEU7GPRKANK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-30T09:32:31.2239145+05:45 0HLEU7GPRKANN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-30T09:32:31.2628638+05:45 0HLEU7GPRKANK:00000001 [INF] Request finished in 39.9644ms 304  (791a596a)
+2018-06-30T09:32:32.2465283+05:45 0HLEU7GPRKANJ:00000001 [INF] Request finished in 1029.7382ms 304  (791a596a)
+2018-06-30T09:32:32.2487341+05:45 0HLEU7GPRKANI:00000002 [INF] Request finished in 1032.0857ms 304  (791a596a)
+2018-06-30T09:32:32.2504056+05:45 0HLEU7GPRKANN:00000001 [INF] Request finished in 1026.4844ms 304  (791a596a)
+2018-06-30T09:32:32.3752878+05:45 0HLEU7GPRKANM:00000001 [INF] Request finished in 1155.4409ms 304  (791a596a)
+2018-06-30T09:32:33.6434902+05:45 0HLEU7GPRKANM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/auth-auth-module.js   (ca22a1cb)
+2018-06-30T09:32:33.6512853+05:45 0HLEU7GPRKANM:00000002 [INF] Request finished in 7.8071ms 304  (791a596a)
+2018-06-30T09:32:33.6923911+05:45 0HLEU7GPRKANM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1530330453689   (ca22a1cb)
+2018-06-30T09:32:33.7199796+05:45 0HLEU7GPRKANM:00000003 [INF] Request finished in 27.524ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T09:32:33.7757187+05:45 0HLEU7GPRKANM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/charts-charts-module~dashboard-crm-dashboard-crm-module.js   (ca22a1cb)
+2018-06-30T09:32:33.7757862+05:45 0HLEU7GPRKANI:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/dashboard-crm-dashboard-crm-module.js   (ca22a1cb)
+2018-06-30T09:32:33.7758227+05:45 0HLEU7GPRKANN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/common.js   (ca22a1cb)
+2018-06-30T09:32:33.7846885+05:45 0HLEU7GPRKANM:00000004 [INF] Request finished in 8.9764ms 304  (791a596a)
+2018-06-30T09:32:33.7890293+05:45 0HLEU7GPRKANN:00000002 [INF] Request finished in 13.0795ms 304  (791a596a)
+2018-06-30T09:32:33.7892849+05:45 0HLEU7GPRKANO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/947/035wr1ib/websocket   (ca22a1cb)
+2018-06-30T09:32:33.7915379+05:45 0HLEU7GPRKANI:00000003 [INF] Request finished in 15.6244ms 304  (791a596a)
+2018-06-30T09:32:33.7940547+05:45 0HLEU7GPRKANO:00000001 [INF] Policy execution successful. (0204925d)
+2018-06-30T09:32:34.5896288+05:45 0HLEU7GPRKANN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/user-image.jpg   (ca22a1cb)
+2018-06-30T09:32:34.5896288+05:45 0HLEU7GPRKANI:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/logo.png   (ca22a1cb)
+2018-06-30T09:32:34.5971044+05:45 0HLEU7GPRKANN:00000003 [INF] Request finished in 6.1462ms 304  (791a596a)
+2018-06-30T09:32:34.5979324+05:45 0HLEU7GPRKANI:00000004 [INF] Request finished in 8.3226ms 304  (791a596a)
+2018-06-30T09:32:35.2893945+05:45 0HLEU7GPRKANI:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/bg/city1.jpg   (ca22a1cb)
+2018-06-30T09:32:35.2932839+05:45 0HLEU7GPRKANI:00000005 [INF] Request finished in 3.7715ms 304  (791a596a)
+2018-06-30T09:32:35.4697866+05:45 0HLEU7GPRKANI:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/avatars/ganesh.jpg   (ca22a1cb)
+2018-06-30T09:32:35.4698208+05:45 0HLEU7GPRKANN:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/avatars/friend1.jpeg   (ca22a1cb)
+2018-06-30T09:32:35.4765471+05:45 0HLEU7GPRKANN:00000004 [INF] Request finished in 6.6857ms 304  (791a596a)
+2018-06-30T09:32:35.4777679+05:45 0HLEU7GPRKANI:00000006 [INF] Request finished in 7.9364ms 304  (791a596a)
+2018-06-30T09:32:36.1930536+05:45 0HLEU7GPRKANI:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:43880/sockjs-node/947/nwkixtfy/xhr_streaming?t=1530330456189  0 (ca22a1cb)
+2018-06-30T09:32:36.1939669+05:45 0HLEU7GPRKANI:00000007 [INF] Policy execution successful. (0204925d)
+2018-06-30T09:32:44.9906183+05:45 0HLEU7GPRKANN:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scrumboard-scrumboard-module.js   (ca22a1cb)
+2018-06-30T09:32:46.0007117+05:45 0HLEU7GPRKANN:00000005 [INF] Request finished in 1010.116ms 304  (791a596a)
+2018-06-30T09:45:21.7953201+05:45 0HLEU7GPRKANP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module.js   (ca22a1cb)
+2018-06-30T09:45:21.7953201+05:45 0HLEU7GPRKANQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/material-widgets-material-widgets-module.js   (ca22a1cb)
+2018-06-30T09:45:22.8038640+05:45 0HLEU7GPRKANP:00000001 [INF] Request finished in 1008.5737ms 304  (791a596a)
+2018-06-30T09:45:22.8061680+05:45 0HLEU7GPRKANQ:00000001 [INF] Request finished in 1010.908ms 304  (791a596a)
+2018-06-30T09:48:26.3596212+05:45 0HLEU7GPRKANR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/pages-login-login-module.js   (ca22a1cb)
+2018-06-30T09:48:27.3646577+05:45 0HLEU7GPRKANR:00000001 [INF] Request finished in 1005.1164ms 304  (791a596a)
+2018-06-30T09:48:27.5632155+05:45 0HLEU7GPRKANR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/login11.jpg   (ca22a1cb)
+2018-06-30T09:48:27.5756262+05:45 0HLEU7GPRKANR:00000002 [INF] Request finished in 12.3026ms 200 image/jpeg; charset=UTF-8 (791a596a)
+2018-06-30T09:48:39.2423424+05:45 0HLEU7GPRKANR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/pages-pages-module.js   (ca22a1cb)
+2018-06-30T09:48:40.2466033+05:45 0HLEU7GPRKANR:00000003 [INF] Request finished in 1004.28ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T09:48:40.6749080+05:45 0HLEU7GPRKANR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/noavatar.png   (ca22a1cb)
+2018-06-30T09:48:40.6758604+05:45 0HLEU7GPRKANS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/profile.jpg   (ca22a1cb)
+2018-06-30T09:48:40.6758675+05:45 0HLEU7GPRKANT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/man.jpeg   (ca22a1cb)
+2018-06-30T09:48:40.6804756+05:45 0HLEU7GPRKANT:00000001 [INF] Request finished in 4.5386ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T09:48:41.6803240+05:45 0HLEU7GPRKANS:00000001 [INF] Request finished in 1004.4302ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T09:48:41.6819040+05:45 0HLEU7GPRKANR:00000004 [INF] Request finished in 1006.7706ms 200 image/png; charset=UTF-8 (791a596a)
+2018-06-30T09:49:13.0096175+05:45 0HLEU7GPRKANR:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/guarded-routes-guarded-routes-module.js   (ca22a1cb)
+2018-06-30T09:49:14.0172637+05:45 0HLEU7GPRKANR:00000005 [INF] Request finished in 1007.7004ms 304  (791a596a)
+2018-06-30T09:49:17.8419841+05:45 0HLEU7GPRKANR:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/charts-charts-module.js   (ca22a1cb)
+2018-06-30T09:49:17.9207841+05:45 0HLEU7GPRKANR:00000006 [INF] Request finished in 79.2911ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T09:49:30.2013140+05:45 0HLEU7GPRKANR:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:43880/tables-tables-module.js   (ca22a1cb)
+2018-06-30T09:49:31.2051403+05:45 0HLEU7GPRKANR:00000007 [INF] Request finished in 1003.8391ms 304  (791a596a)
+2018-06-30T09:51:26.6951058+05:45 0HLEU7GPRKANR:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:43880/auth/tables/responsive   (ca22a1cb)
+2018-06-30T09:51:27.7038347+05:45 0HLEU7GPRKANR:00000008 [INF] Request finished in 1008.7813ms 200 text/html; charset=UTF-8 (791a596a)
+2018-06-30T09:51:27.7131809+05:45 0HLEU7GPRKANI:00000007 [INF] Request finished in 1131520.1824ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-30T09:51:27.7232783+05:45 0HLEU7GPRKANO:00000001 [INF] Request finished in 1133933.9586ms 101  (791a596a)
+2018-06-30T09:51:27.7473832+05:45 0HLEU7GPRKANR:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-30T09:51:27.7495556+05:45 0HLEU7GPRKANV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-30T09:51:27.7512871+05:45 0HLEU7GPRKANU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-30T09:51:27.7520556+05:45 0HLEU7GPRKAO0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-30T09:51:27.7528374+05:45 0HLEU7GPRKAO1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-30T09:51:27.7582382+05:45 0HLEU7GPRKANV:00000001 [INF] Request finished in 8.6657ms 304  (791a596a)
+2018-06-30T09:51:27.7744369+05:45 0HLEU7GPRKAO0:00000001 [INF] Request finished in 22.3773ms 304  (791a596a)
+2018-06-30T09:51:28.7582463+05:45 0HLEU7GPRKANR:00000009 [INF] Request finished in 1010.8711ms 304  (791a596a)
+2018-06-30T09:51:28.7745311+05:45 0HLEU7GPRKANU:00000001 [INF] Request finished in 1023.216ms 304  (791a596a)
+2018-06-30T09:51:28.7774979+05:45 0HLEU7GPRKAO1:00000001 [INF] Request finished in 1024.6328ms 304  (791a596a)
+2018-06-30T09:51:29.8222956+05:45 0HLEU7GPRKAO1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/auth-auth-module.js   (ca22a1cb)
+2018-06-30T09:51:29.8252916+05:45 0HLEU7GPRKAO1:00000002 [INF] Request finished in 3.012ms 304  (791a596a)
+2018-06-30T09:51:29.9148436+05:45 0HLEU7GPRKAO1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/chats-chat-module~maps-maps-module~material-widgets-material-widgets-module~tables-tables-module.js   (ca22a1cb)
+2018-06-30T09:51:29.9170170+05:45 0HLEU7GPRKANU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/common.js   (ca22a1cb)
+2018-06-30T09:51:29.9170823+05:45 0HLEU7GPRKANR:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:43880/tables-tables-module.js   (ca22a1cb)
+2018-06-30T09:51:29.9231983+05:45 0HLEU7GPRKAO0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1530331589920   (ca22a1cb)
+2018-06-30T09:51:29.9251303+05:45 0HLEU7GPRKAO1:00000003 [INF] Request finished in 10.2728ms 304  (791a596a)
+2018-06-30T09:51:29.9267552+05:45 0HLEU7GPRKANR:0000000A [INF] Request finished in 9.6542ms 304  (791a596a)
+2018-06-30T09:51:29.9280757+05:45 0HLEU7GPRKANU:00000002 [INF] Request finished in 11.0613ms 304  (791a596a)
+2018-06-30T09:51:29.9328957+05:45 0HLEU7GPRKAO0:00000002 [INF] Request finished in 9.6991ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-30T09:51:29.9431144+05:45 0HLEU7GPRKAO2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/217/ot2t531o/websocket   (ca22a1cb)
+2018-06-30T09:51:29.9432841+05:45 0HLEU7GPRKAO2:00000001 [INF] Policy execution successful. (0204925d)
+2018-06-30T09:51:30.7243213+05:45 0HLEU7GPRKAO0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/logo.png   (ca22a1cb)
+2018-06-30T09:51:30.7281751+05:45 0HLEU7GPRKAO0:00000003 [INF] Request finished in 3.8911ms 304  (791a596a)
+2018-06-30T09:51:30.9279988+05:45 0HLEU7GPRKAO0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/user-image.jpg   (ca22a1cb)
+2018-06-30T09:51:30.9347916+05:45 0HLEU7GPRKAO0:00000004 [INF] Request finished in 6.7964ms 304  (791a596a)
+2018-06-30T09:51:31.2155571+05:45 0HLEU7GPRKAO0:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/avatars/ganesh.jpg   (ca22a1cb)
+2018-06-30T09:51:31.2193015+05:45 0HLEU7GPRKAO0:00000005 [INF] Request finished in 3.7484ms 304  (791a596a)
+2018-06-30T09:51:31.2598478+05:45 0HLEU7GPRKAO0:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/bg/city1.jpg   (ca22a1cb)
+2018-06-30T09:51:31.2735385+05:45 0HLEU7GPRKAO0:00000006 [INF] Request finished in 13.6235ms 304  (791a596a)
+2018-06-30T09:51:31.4725217+05:45 0HLEU7GPRKAO0:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/images/avatars/friend1.jpeg   (ca22a1cb)
+2018-06-30T09:51:31.4828199+05:45 0HLEU7GPRKAO0:00000007 [INF] Request finished in 10.224ms 304  (791a596a)
+2018-06-30T09:55:38.1057295+05:45 0HLEU7GPRKAO3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/swagger   (ca22a1cb)
+2018-06-30T09:55:38.1082162+05:45 0HLEU7GPRKAO3:00000001 [INF] Request finished in 2.6346ms 301  (791a596a)
+2018-06-30T09:55:38.1122851+05:45 0HLEU7GPRKAO3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/swagger/index.html   (ca22a1cb)
+2018-06-30T09:55:38.1528398+05:45 0HLEU7GPRKAO3:00000002 [INF] Request finished in 40.5889ms 200 text/html (791a596a)
+2018-06-30T09:55:38.1692620+05:45 0HLEU7GPRKAO3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/swagger/swagger-ui.css   (ca22a1cb)
+2018-06-30T09:55:38.1701434+05:45 0HLEU7GPRKAO5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/swagger/swagger-ui-bundle.js   (ca22a1cb)
+2018-06-30T09:55:38.1725998+05:45 0HLEU7GPRKAO4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/swagger/swagger-ui-standalone-preset.js   (ca22a1cb)
+2018-06-30T09:55:38.1868025+05:45 0HLEU7GPRKAO3:00000003 [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2018-06-30T09:55:38.1868025+05:45 0HLEU7GPRKAO5:00000001 [INF] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"' (27b0a520)
+2018-06-30T09:55:38.1868025+05:45 0HLEU7GPRKAO4:00000001 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"' (27b0a520)
+2018-06-30T09:55:38.2050060+05:45 0HLEU7GPRKAO2:00000001 [INF] Request finished in 248262.1285ms 101  (791a596a)
+2018-06-30T09:55:38.2207198+05:45 0HLEU7GPRKAO3:00000003 [INF] Request finished in 51.4426ms 200 text/css (791a596a)
+2018-06-30T09:55:38.2223238+05:45 0HLEU7GPRKAO4:00000001 [INF] Request finished in 49.7102ms 200 application/javascript (791a596a)
+2018-06-30T09:55:38.2540447+05:45 0HLEU7GPRKAO5:00000001 [INF] Request finished in 84.3595ms 200 application/javascript (791a596a)
+2018-06-30T09:55:38.8956378+05:45 0HLEU7GPRKAO5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/swagger/v1/swagger.json   (ca22a1cb)
+2018-06-30T09:55:39.2262158+05:45 0HLEU7GPRKAO5:00000002 [INF] Request finished in 330.4477ms 200 application/json;charset=utf-8 (791a596a)
+2018-06-30T09:56:23.5224626+05:45 0HLEU7GPRKAO5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/api/Customer   (ca22a1cb)
+2018-06-30T09:56:23.6208924+05:45 0HLEU7GPRKAO5:00000003 [INF] Route matched with "{action = \"Get\", controller = \"Customer\"}". Executing action "NGGPMS.Controllers.CustomerController.Get (NGGPMS)" (a44c0341)
+2018-06-30T09:56:23.6910049+05:45 0HLEU7GPRKAO5:00000003 [INF] Executing action method "NGGPMS.Controllers.CustomerController.Get (NGGPMS)" - Validation state: Valid (dad538d7)
+2018-06-30T09:56:23.6968213+05:45 0HLEU7GPRKAO5:00000003 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=QuickApp " (9958f5bb)
+2018-06-30T09:56:24.8027200+05:45 0HLEU7GPRKAO5:00000003 [INF] Executed DbCommand ("69"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Address], [c].[City], [c].[CreatedBy], [c].[CreatedDate], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[Gender], [c].[Name], [c].[PhoneNumber], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [AppCustomers] AS [c]
+ORDER BY [c].[Name], [c].[Id]" (0723d8ff)
+2018-06-30T09:56:24.9168046+05:45 0HLEU7GPRKAO5:00000003 [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.Orders].[Id], [c.Orders].[CashierId], [c.Orders].[Comments], [c.Orders].[CreatedBy], [c.Orders].[CreatedDate], [c.Orders].[CustomerId], [c.Orders].[DateCreated], [c.Orders].[DateModified], [c.Orders].[Discount], [c.Orders].[UpdatedBy], [c.Orders].[UpdatedDate], [o.Cashier].[Id], [o.Cashier].[AccessFailedCount], [o.Cashier].[ConcurrencyStamp], [o.Cashier].[Configuration], [o.Cashier].[CreatedBy], [o.Cashier].[CreatedDate], [o.Cashier].[Email], [o.Cashier].[EmailConfirmed], [o.Cashier].[FullName], [o.Cashier].[IsEnabled], [o.Cashier].[JobTitle], [o.Cashier].[LockoutEnabled], [o.Cashier].[LockoutEnd], [o.Cashier].[NormalizedEmail], [o.Cashier].[NormalizedUserName], [o.Cashier].[PasswordHash], [o.Cashier].[PhoneNumber], [o.Cashier].[PhoneNumberConfirmed], [o.Cashier].[SecurityStamp], [o.Cashier].[TwoFactorEnabled], [o.Cashier].[UpdatedBy], [o.Cashier].[UpdatedDate], [o.Cashier].[UserName]
+FROM [AppOrders] AS [c.Orders]
+LEFT JOIN [AspNetUsers] AS [o.Cashier] ON [c.Orders].[CashierId] = [o.Cashier].[Id]
+INNER JOIN (
+    SELECT [c0].[Id], [c0].[Name]
+    FROM [AppCustomers] AS [c0]
+) AS [t] ON [c.Orders].[CustomerId] = [t].[Id]
+ORDER BY [t].[Name], [t].[Id], [c.Orders].[Id]" (0723d8ff)
+2018-06-30T09:56:25.0285842+05:45 0HLEU7GPRKAO5:00000003 [INF] Executed DbCommand ("77"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.Orders.OrderDetails].[Id], [c.Orders.OrderDetails].[CreatedBy], [c.Orders.OrderDetails].[CreatedDate], [c.Orders.OrderDetails].[Discount], [c.Orders.OrderDetails].[OrderId], [c.Orders.OrderDetails].[ProductId], [c.Orders.OrderDetails].[Quantity], [c.Orders.OrderDetails].[UnitPrice], [c.Orders.OrderDetails].[UpdatedBy], [c.Orders.OrderDetails].[UpdatedDate], [o.Product].[Id], [o.Product].[BuyingPrice], [o.Product].[CreatedBy], [o.Product].[CreatedDate], [o.Product].[DateCreated], [o.Product].[DateModified], [o.Product].[Description], [o.Product].[Icon], [o.Product].[IsActive], [o.Product].[IsDiscontinued], [o.Product].[Name], [o.Product].[ParentId], [o.Product].[ProductCategoryId], [o.Product].[SellingPrice], [o.Product].[UnitsInStock], [o.Product].[UpdatedBy], [o.Product].[UpdatedDate]
+FROM [AppOrderDetails] AS [c.Orders.OrderDetails]
+INNER JOIN [AppProducts] AS [o.Product] ON [c.Orders.OrderDetails].[ProductId] = [o.Product].[Id]
+INNER JOIN (
+    SELECT DISTINCT [c.Orders0].[Id], [t0].[Name], [t0].[Id] AS [Id0]
+    FROM [AppOrders] AS [c.Orders0]
+    LEFT JOIN [AspNetUsers] AS [o.Cashier0] ON [c.Orders0].[CashierId] = [o.Cashier0].[Id]
+    INNER JOIN (
+        SELECT [c1].[Id], [c1].[Name]
+        FROM [AppCustomers] AS [c1]
+    ) AS [t0] ON [c.Orders0].[CustomerId] = [t0].[Id]
+) AS [t1] ON [c.Orders.OrderDetails].[OrderId] = [t1].[Id]
+ORDER BY [t1].[Name], [t1].[Id0], [t1].[Id]" (0723d8ff)
+2018-06-30T09:56:25.1113744+05:45 0HLEU7GPRKAO5:00000003 [INF] Executed action method "NGGPMS.Controllers.CustomerController.Get (NGGPMS)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1416.8295ms. (50a9e262)
+2018-06-30T09:56:25.1545340+05:45 0HLEU7GPRKAO5:00000003 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[NGGPMS.ViewModels.CustomerViewModel, NGGPMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-06-30T09:56:25.1950278+05:45 0HLEU7GPRKAO5:00000003 [INF] Executed action "NGGPMS.Controllers.CustomerController.Get (NGGPMS)" in 1567.1802ms (afa2e885)
+2018-06-30T09:56:25.1956037+05:45 0HLEU7GPRKAO5:00000003 [INF] Request finished in 1673.2034ms 200 application/json; charset=utf-8 (791a596a)
+2018-06-30T09:59:40.8261285+05:45 0HLEU7GPRKAO9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/api/Customer   (ca22a1cb)
+2018-06-30T09:59:41.3206145+05:45 0HLEU7GPRKAO9:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Customer\"}". Executing action "NGGPMS.Controllers.CustomerController.Get (NGGPMS)" (a44c0341)
+2018-06-30T09:59:41.3212362+05:45 0HLEU7GPRKAO9:00000001 [INF] Executing action method "NGGPMS.Controllers.CustomerController.Get (NGGPMS)" - Validation state: Valid (dad538d7)
+2018-06-30T09:59:41.3221719+05:45 0HLEU7GPRKAO9:00000001 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=QuickApp " (9958f5bb)
+2018-06-30T09:59:42.2453878+05:45 0HLEU7GPRKAO9:00000001 [INF] Executed DbCommand ("624"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Address], [c].[City], [c].[CreatedBy], [c].[CreatedDate], [c].[DateCreated], [c].[DateModified], [c].[Email], [c].[Gender], [c].[Name], [c].[PhoneNumber], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [AppCustomers] AS [c]
+ORDER BY [c].[Name], [c].[Id]" (0723d8ff)
+2018-06-30T09:59:42.2498575+05:45 0HLEU7GPRKAO9:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.Orders].[Id], [c.Orders].[CashierId], [c.Orders].[Comments], [c.Orders].[CreatedBy], [c.Orders].[CreatedDate], [c.Orders].[CustomerId], [c.Orders].[DateCreated], [c.Orders].[DateModified], [c.Orders].[Discount], [c.Orders].[UpdatedBy], [c.Orders].[UpdatedDate], [o.Cashier].[Id], [o.Cashier].[AccessFailedCount], [o.Cashier].[ConcurrencyStamp], [o.Cashier].[Configuration], [o.Cashier].[CreatedBy], [o.Cashier].[CreatedDate], [o.Cashier].[Email], [o.Cashier].[EmailConfirmed], [o.Cashier].[FullName], [o.Cashier].[IsEnabled], [o.Cashier].[JobTitle], [o.Cashier].[LockoutEnabled], [o.Cashier].[LockoutEnd], [o.Cashier].[NormalizedEmail], [o.Cashier].[NormalizedUserName], [o.Cashier].[PasswordHash], [o.Cashier].[PhoneNumber], [o.Cashier].[PhoneNumberConfirmed], [o.Cashier].[SecurityStamp], [o.Cashier].[TwoFactorEnabled], [o.Cashier].[UpdatedBy], [o.Cashier].[UpdatedDate], [o.Cashier].[UserName]
+FROM [AppOrders] AS [c.Orders]
+LEFT JOIN [AspNetUsers] AS [o.Cashier] ON [c.Orders].[CashierId] = [o.Cashier].[Id]
+INNER JOIN (
+    SELECT [c0].[Id], [c0].[Name]
+    FROM [AppCustomers] AS [c0]
+) AS [t] ON [c.Orders].[CustomerId] = [t].[Id]
+ORDER BY [t].[Name], [t].[Id], [c.Orders].[Id]" (0723d8ff)
+2018-06-30T09:59:42.2554891+05:45 0HLEU7GPRKAO9:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.Orders.OrderDetails].[Id], [c.Orders.OrderDetails].[CreatedBy], [c.Orders.OrderDetails].[CreatedDate], [c.Orders.OrderDetails].[Discount], [c.Orders.OrderDetails].[OrderId], [c.Orders.OrderDetails].[ProductId], [c.Orders.OrderDetails].[Quantity], [c.Orders.OrderDetails].[UnitPrice], [c.Orders.OrderDetails].[UpdatedBy], [c.Orders.OrderDetails].[UpdatedDate], [o.Product].[Id], [o.Product].[BuyingPrice], [o.Product].[CreatedBy], [o.Product].[CreatedDate], [o.Product].[DateCreated], [o.Product].[DateModified], [o.Product].[Description], [o.Product].[Icon], [o.Product].[IsActive], [o.Product].[IsDiscontinued], [o.Product].[Name], [o.Product].[ParentId], [o.Product].[ProductCategoryId], [o.Product].[SellingPrice], [o.Product].[UnitsInStock], [o.Product].[UpdatedBy], [o.Product].[UpdatedDate]
+FROM [AppOrderDetails] AS [c.Orders.OrderDetails]
+INNER JOIN [AppProducts] AS [o.Product] ON [c.Orders.OrderDetails].[ProductId] = [o.Product].[Id]
+INNER JOIN (
+    SELECT DISTINCT [c.Orders0].[Id], [t0].[Name], [t0].[Id] AS [Id0]
+    FROM [AppOrders] AS [c.Orders0]
+    LEFT JOIN [AspNetUsers] AS [o.Cashier0] ON [c.Orders0].[CashierId] = [o.Cashier0].[Id]
+    INNER JOIN (
+        SELECT [c1].[Id], [c1].[Name]
+        FROM [AppCustomers] AS [c1]
+    ) AS [t0] ON [c.Orders0].[CustomerId] = [t0].[Id]
+) AS [t1] ON [c.Orders.OrderDetails].[OrderId] = [t1].[Id]
+ORDER BY [t1].[Name], [t1].[Id0], [t1].[Id]" (0723d8ff)
+2018-06-30T09:59:42.2592212+05:45 0HLEU7GPRKAO9:00000001 [INF] Executed action method "NGGPMS.Controllers.CustomerController.Get (NGGPMS)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 937.803ms. (50a9e262)
+2018-06-30T09:59:42.2598162+05:45 0HLEU7GPRKAO9:00000001 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[NGGPMS.ViewModels.CustomerViewModel, NGGPMS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-06-30T09:59:42.2607802+05:45 0HLEU7GPRKAO9:00000001 [INF] Executed action "NGGPMS.Controllers.CustomerController.Get (NGGPMS)" in 940.019ms (afa2e885)
+2018-06-30T09:59:42.2610109+05:45 0HLEU7GPRKAO9:00000001 [INF] Request finished in 1434.9548ms 200 application/json; charset=utf-8 (791a596a)
+2018-06-30T10:11:58.5162403+05:45  [INF] Starting @angular/cli on port 42321... (b44d44bf)
+2018-06-30T10:11:59.2786700+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=QuickApp " (9958f5bb)
+2018-06-30T10:11:59.3666199+05:45  [FTL] Error whilst creating and seeding database (944fb156)
+System.AggregateException: One or more errors occurred. (Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.) ---> System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at NGGPMS.Program.Main(String[] args) in F:\ASPDOTNETCORE\NGGPMS\NGGPMS\Program.cs:line 35
+---> (Inner Exception #0) System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'QuickApp, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+
+<---
+
+2018-06-30T10:12:06.1133229+05:45  [INF] > cdk-admin-v2@0.0.0 start F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp
+> ng serve "--port" "42321"
+
+** Angular Live Development Server is listening on localhost:42321, open your browser on http://localhost:42321/ **
+ (2b7e2740)
+2018-06-30T10:12:28.0106045+05:45  [INF] Date: 2018-06-30T04:27:28.009Z
+Hash: 619f7f2940e096807cdb
+Time: 21620ms
+chunk {main} main.js, main.js.map (main) 1.94 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 686 bytes [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 291 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 102 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 325 kB [initial] [rendered]
+
+ (f42cf412)
+2018-06-30T10:12:28.3225447+05:45  [INF] ERROR in node_modules/@angular/core/src/render3/ng_dev_mode.d.ts(9,11): error TS2451: Cannot redeclare block-scoped variable 'ngDevMode'.
+../node_modules/@angular/core/src/render3/ng_dev_mode.d.ts(9,11): error TS2451: Cannot redeclare block-scoped variable 'ngDevMode'.
+
+i ∩╜ówdm∩╜ú: Failed to compile.
+ (ef7304f2)
+2018-06-30T10:12:38.6581516+05:45 0HLEU877UNRLB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-30T10:12:40.2763074+05:45 0HLEU877UNRLB:00000001 [INF] Request finished in 1628.9287ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T10:12:59.3304790+05:45 0HLEU877UNRLB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-30T10:13:00.3448234+05:45 0HLEU877UNRLB:00000002 [INF] Request finished in 1014.3733ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T10:13:30.0098473+05:45 0HLEU877UNRLB:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-30T10:13:31.0207397+05:45 0HLEU877UNRLB:00000003 [INF] Request finished in 1010.876ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-30T10:14:33.0365010+05:45  [INF] Starting @angular/cli on port 42538... (3add9f8c)
+2018-06-30T10:14:33.6228919+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=QuickApp " (9958f5bb)
+2018-06-30T10:14:33.6886076+05:45  [FTL] Error whilst creating and seeding database (944fb156)
+System.AggregateException: One or more errors occurred. (Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.) ---> System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at NGGPMS.Program.Main(String[] args) in F:\ASPDOTNETCORE\NGGPMS\NGGPMS\Program.cs:line 35
+---> (Inner Exception #0) System.IO.FileNotFoundException: Could not load file or assembly 'QuickApp, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'QuickApp, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, IntPtr ptrLoadContextBinder)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationsAssembly..ctor(ICurrentDbContext currentContext, IDbContextOptions options, IMigrationsIdGenerator idGenerator)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetRelationalService[TService](IInfrastructure`1 databaseFacade)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+
+<---
+
+2018-06-30T10:14:40.9682437+05:45  [INF] > cdk-admin-v2@0.0.0 start F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp
+> ng serve "--port" "42538"
+
+** Angular Live Development Server is listening on localhost:42538, open your browser on http://localhost:42538/ **
+ (85e823d5)
+2018-06-30T10:15:01.7987081+05:45  [INF] Date: 2018-06-30T04:30:01.795Z
+Hash: 619f7f2940e096807cdb
+Time: 20625ms
+chunk {main} main.js, main.js.map (main) 1.94 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 686 bytes [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 291 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 102 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 325 kB [initial] [rendered]
+
+ (6b745711)
+2018-06-30T10:15:02.0919260+05:45  [INF] ERROR in node_modules/@angular/core/src/render3/ng_dev_mode.d.ts(9,11): error TS2451: Cannot redeclare block-scoped variable 'ngDevMode'.
+../node_modules/@angular/core/src/render3/ng_dev_mode.d.ts(9,11): error TS2451: Cannot redeclare block-scoped variable 'ngDevMode'.
+
+i ∩╜ówdm∩╜ú: Failed to compile.
+ (ef7304f2)
+2018-06-30T10:15:42.8208209+05:45 0HLEU88URC8UC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-30T10:15:44.4015088+05:45 0HLEU88URC8UC:00000001 [INF] Request finished in 1594.6362ms 404 text/html; charset=utf-8 (791a596a)

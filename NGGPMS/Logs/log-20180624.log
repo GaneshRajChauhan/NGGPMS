@@ -1,0 +1,211 @@
+2018-06-24T08:48:28.5651670+05:45  [INF] Starting @angular/cli on port 45630... (a4e43694)
+2018-06-24T08:48:33.0449863+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NGGPMS " (9958f5bb)
+2018-06-24T08:48:42.0628374+05:45  [INF] > NGGPMS@0.0.0 start C:\Users\user\Desktop\NGGPMS\NGGPMS\ClientApp
+> ng serve --extract-css "--port" "45630"
+
+** NG Live Development Server is listening on localhost:45630, open your browser on http://localhost:45630/ **
+ (ff4d5cd3)
+2018-06-24T08:48:58.5467456+05:45  [INF] Executed DbCommand ("222"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-24T08:48:58.5790242+05:45  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-24T08:48:58.6201171+05:45  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-06-24T08:48:59.6343908+05:45  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-06-24T08:49:00.2425433+05:45  [INF] Executed DbCommand ("93"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-24T08:49:00.2865886+05:45  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-24T08:49:09.4989706+05:45  [INF] Date: 2018-06-24T03:04:09.493Z
+ (ac5fe933)
+2018-06-24T08:49:09.5322985+05:45  [INF] Hash: 2e45211a0322042396e6
+Time: 27397ms
+chunk {inline} inline.bundle.js (inline) 5.79 kB [entry] [rendered]
+chunk {main} main.bundle.js (main) 62.1 kB [initial] [rendered]
+chunk {polyfills} polyfills.bundle.js (polyfills) 560 kB [initial] [rendered]
+chunk {styles} styles.bundle.css (styles) 116 kB [initial] [rendered]
+chunk {vendor} vendor.bundle.js (vendor) 9.24 MB [initial] [rendered]
+
+ (63bc0eeb)
+2018-06-24T08:49:09.5374025+05:45  [INF] webpack: Compiled successfully.
+ (f274984e)
+2018-06-24T08:49:11.2691242+05:45 0HLEPFSHBVQ9A:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-24T08:49:12.6620895+05:45 0HLEPFSHBVQ9A:00000001 [INF] Request finished in 1432.022ms 304  (791a596a)
+2018-06-24T08:49:12.8615923+05:45 0HLEPFSHBVQ98:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.bundle.js   (ca22a1cb)
+2018-06-24T08:49:12.8840856+05:45 0HLEPFSHBVQ9A:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.bundle.css   (ca22a1cb)
+2018-06-24T08:49:12.8940870+05:45 0HLEPFSHBVQ99:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.bundle.js   (ca22a1cb)
+2018-06-24T08:49:12.9450602+05:45 0HLEPFSHBVQ9B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/inline.bundle.js   (ca22a1cb)
+2018-06-24T08:49:13.0169205+05:45 0HLEPFSHBVQ9C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.bundle.js   (ca22a1cb)
+2018-06-24T08:49:13.0625098+05:45 0HLEPFSHBVQ98:00000001 [INF] Request finished in 209.8832ms 304  (791a596a)
+2018-06-24T08:49:13.0855649+05:45 0HLEPFSHBVQ9B:00000001 [INF] Request finished in 185.7961ms 304  (791a596a)
+2018-06-24T08:49:13.1159249+05:45 0HLEPFSHBVQ9C:00000001 [INF] Request finished in 250.6125ms 304  (791a596a)
+2018-06-24T08:49:14.0501481+05:45 0HLEPFSHBVQ99:00000001 [INF] Request finished in 1202.8175ms 304  (791a596a)
+2018-06-24T08:49:14.1032889+05:45 0HLEPFSHBVQ9A:00000002 [INF] Request finished in 1251.1107ms 304  (791a596a)
+2018-06-24T08:49:20.0111952+05:45 0HLEPFSHBVQ9D:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/glyphicons-halflings-regular.448c34a56d699c29117a.woff2   (ca22a1cb)
+2018-06-24T08:49:20.1793243+05:45 0HLEPFSHBVQ9E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529809460173   (ca22a1cb)
+2018-06-24T08:49:21.1663088+05:45 0HLEPFSHBVQ9D:00000001 [INF] Request finished in 1149.1286ms 304  (791a596a)
+2018-06-24T08:49:21.4020187+05:45 0HLEPFSHBVQ9E:00000001 [INF] Request finished in 1218.357ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-24T08:49:21.5355381+05:45 0HLEPFSHBVQ9F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/012/vie10xo2/websocket   (ca22a1cb)
+2018-06-24T08:49:44.6107028+05:45 0HLEPFSHBVQ9G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/api/SampleData/WeatherForecasts   (ca22a1cb)
+2018-06-24T08:49:45.6250131+05:45 0HLEPFSHBVQ9G:00000001 [INF] Request finished in 1013.2888ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-24T08:49:56.1477697+05:45 0HLEPFSHBVQ9F:00000001 [INF] Request finished in 34606.9494ms 101  (791a596a)
+2018-06-24T08:55:31.2700473+05:45  [INF] Starting @angular/cli on port 45859... (440ab210)
+2018-06-24T08:55:33.6600139+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NGGPMS " (9958f5bb)
+2018-06-24T08:55:38.1468138+05:45  [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-24T08:55:38.1538519+05:45  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-24T08:55:38.1637443+05:45  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-06-24T08:55:38.3738290+05:45  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-06-24T08:55:38.7341253+05:45  [INF] Executed DbCommand ("106"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-24T08:55:38.7617907+05:45  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-24T08:55:41.8435865+05:45 0HLEPG081N41R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-24T08:55:42.8759042+05:45  [INF] > NGGPMS@0.0.0 start C:\Users\user\Desktop\NGGPMS\NGGPMS\ClientApp
+> ng serve --extract-css "--port" "45859"
+
+** NG Live Development Server is listening on localhost:45859, open your browser on http://localhost:45859/ **
+ (e382a5cd)
+2018-06-24T08:55:51.7545218+05:45  [INF] webpack: wait until bundle finished: /
+ (4d787c36)
+2018-06-24T08:55:54.6572722+05:45  [INF] Date: 2018-06-24T03:10:54.624Z
+ (8c9aa490)
+2018-06-24T08:55:54.8181893+05:45  [INF] Hash: ede8d9872d56b235b974
+Time: 11693ms
+chunk {inline} inline.bundle.js (inline) 5.79 kB [entry] [rendered]
+chunk {main} main.bundle.js (main) 2.93 kB [initial] [rendered]
+chunk {polyfills} polyfills.bundle.js (polyfills) 636 bytes [initial] [rendered]
+chunk {styles} styles.bundle.css (styles) 116 kB [initial] [rendered]
+chunk {vendor} vendor.bundle.js (vendor) 854 kB [initial] [rendered]
+webpack: Failed to compile.
+ (97314787)
+2018-06-24T08:55:54.8362373+05:45  [ERR]   0% compiling 10% building modules 0/1 modules 1 active ...p\NGGPMS\NGGPMS\ClientApp\src\main.ts                                          10% building modules 1/1 modules 0 active 10% building modules 1/2 modules 1 active ...PMS\NGGPMS\ClientApp\src\polyfills.ts                                          10% building modules 2/2 modules 0 active 10% building modules 2/3 modules 1 active ...\bootstrap\dist\css\bootstrap.min.css                                          10% building modules 3/3 modules 0 active 10% building modules 3/4 modules 1 active ...p\NGGPMS\NGGPMS\ClientApp\src\main.ts 10% building modules 3/5 modules 2 active ...PMS\NGGPMS\ClientApp\src\polyfills.ts 10% building modules 4/5 modules 1 active ...PMS\NGGPMS\ClientApp\src\polyfills.ts                                          10% building modules 5/5 modules 0 active 10% building modules 5/6 modules 1 active ...GGPMS\NGGPMS\ClientApp\src\styles.css 10% building modules 5/7 modules 2 active ...\bootstrap\dist\css\bootstrap.min.css 10% building modules 5/8 modules 3 active ...rver\client\index.js?http://0.0.0.0:0 10% building modules 6/8 modules 2 active ...rver\client\index.js?http://0.0.0.0:0 10% building modules 7/8 modules 1 active ...\bootstrap\dist\css\bootstrap.min.css 10% building modules 7/9 modules 2 active ...de_modules\css-loader\lib\css-base.js 10% building modules 7/10 modules 3 active ...\webpack\hot nonrecursive /^\.\/log$/ 10% building modules 8/10 modules 2 active ...\webpack\hot nonrecursive /^\.\/log$/ 10% building modules 8/11 modules 3 active ...s\webpack-dev-server\client\socket.js 10% building modules 8/12 modules 4 active ...\webpack-dev-server\client\overlay.js 10% building modules 8/13 modules 5 active ...PMS\ClientApp\node_modules\url\url.js 11% building modules 9/13 modules 4 active ...PMS\ClientApp\node_modules\url\url.js 11% building modules 9/14 modules 5 active ...p\node_modules\webpack\hot\emitter.js 11% building modules 10/14 modules 4 active ...p\node_modules\webpack\hot\emitter.js 11% building modules 11/14 modules 3 active ...p\node_modules\webpack\hot\emitter.js 11% building modules 12/14 modules 2 active ...p\node_modules\webpack\hot\emitter.js 11% building modules 13/14 modules 1 active ...p\node_modules\webpack\hot\emitter.js 11% building modules 13/15 modules 2 active ...ntApp\node_modules\webpack\hot\log.js 11% building modules 14/15 modules 1 active ...ntApp\node_modules\webpack\hot\log.js 11% building modules 14/16 modules 2 active ...tApp\node_modules\strip-ansi\index.js 11% building modules 14/17 modules 3 active ...node_modules\loglevel\lib\loglevel.js 11% building modules 15/17 modules 2 active ...node_modules\loglevel\lib\loglevel.js 11% building modules 15/18 modules 3 active ...MS\ClientApp\node_modules\url\util.js 11% building modules 15/19 modules 4 active ...App\node_modules\punycode\punycode.js 11% building modules 15/20 modules 5 active ...node_modules\querystring-es3\index.js 11% building modules 16/20 modules 4 active ...node_modules\querystring-es3\index.js 11% building modules 16/21 modules 5 active ...ientApp\node_modules\events\events.js 12% building modules 17/21 modules 4 active ...ientApp\node_modules\events\events.js 12% building modules 17/22 modules 5 active ..._modules\sockjs-client\dist\sockjs.js 12% building modules 18/22 modules 4 active ..._modules\sockjs-client\dist\sockjs.js 12% building modules 18/23 modules 5 active ...ntApp\node_modules\ansi-html\index.js 12% building modules 19/23 modules 4 active ...ntApp\node_modules\ansi-html\index.js 12% building modules 20/23 modules 3 active ...ntApp\node_modules\ansi-html\index.js 12% building modules 21/23 modules 2 active ...ntApp\node_modules\ansi-html\index.js 12% building modules 21/24 modules 3 active ...p\node_modules\html-entities\index.js 12% building modules 22/24 modules 2 active ...p\node_modules\html-entities\index.js 12% building modules 22/25 modules 3 active ...ode_modules\webpack\buildin\module.js 12% building modules 22/26 modules 4 active ...ode_modules\webpack\buildin\global.js 12% building modules 22/27 modules 5 active ...onts\glyphicons-halflings-regular.eot 12% building modules 22/28 modules 6 active ...onts\glyphicons-halflings-regular.svg 12% building modules 22/29 modules 7 active ...ts\glyphicons-halflings-regular.woff2 12% building modules 22/30 modules 8 active ...nts\glyphicons-halflings-regular.woff 12% building modules 22/31 modules 9 active ...onts\glyphicons-halflings-regular.ttf 12% building modules 22/32 modules 10 active ...ode_modules\querystring-es3\decode.js 12% building modules 22/33 modules 11 active ...ode_modules\querystring-es3\encode.js 12% building modules 23/33 modules 10 active ...ode_modules\querystring-es3\encode.js  12% building modules 24/33 modules 9 active ...ode_modules\querystring-es3\encode.js 13% building modules 25/33 modules 8 active ...ode_modules\querystring-es3\encode.js 13% building modules 26/33 modules 7 active ...ode_modules\querystring-es3\encode.js 13% building modules 27/33 modules 6 active ...ode_modules\querystring-es3\encode.js 13% building modules 28/33 modules 5 active ...onts\glyphicons-halflings-regular.ttf 13% building modules 28/34 modules 6 active ...les\html-entities\lib\xml-entities.js 13% building modules 28/35 modules 7 active ...s\html-entities\lib\html4-entities.js 13% building modules 28/36 modules 8 active ...s\html-entities\lib\html5-entities.js 13% building modules 29/36 modules 7 active ...s\html-entities\lib\html5-entities.js 13% building modules 30/36 modules 6 active ...s\html-entities\lib\html5-entities.js 13% building modules 30/37 modules 7 active ...tApp\node_modules\ansi-regex\index.js 13% building modules 31/37 modules 6 active ...tApp\node_modules\ansi-regex\index.js 13% building modules 32/37 modules 5 active ...tApp\node_modules\ansi-regex\index.js 13% building modules 33/37 modules 4 active ...tApp\node_modules\ansi-regex\index.js 14% building modules 34/37 modules 3 active ...s\html-entities\lib\html5-entities.js 14% building modules 35/37 modules 2 active ...onts\glyphicons-halflings-regular.svg 14% building modules 36/37 modules 1 active ..._modules\sockjs-client\dist\sockjs.js                                          14% building modules 37/37 modules 0 active                                 71% sealing 72% optimizing 73% basic module optimization       74% module optimization 75% advanced module optimization     76% basic chunk optimization 76% basic chunk optimization pass 2 76% basic chunk optimization pass 3 76% basic chunk optimization pass 4              77% chunk optimization 78% advanced chunk optimization 14% building modules 37/38 modules 1 active ...GGPMS\NGGPMS\ClientApp\src\styles.css 14% building modules 37/39 modules 2 active ...\bootstrap\dist\css\bootstrap.min.css 14% building modules 38/39 modules 1 active ...\bootstrap\dist\css\bootstrap.min.css                                          14% building modules 39/39 modules 0 active      79% module and chunk tree optimization         80% chunk modules optimization 81% advanced chunk modules optimization                     82% module reviving 83% module order optimization    84% module id optimization         85% chunk reviving 86% chunk order optimization    87% chunk id optimization               88% hashing 89% module assets processing  90% chunk assets processing 91% additional chunk assets processing        91% additional asset processing    92% chunk asset optimization       94% asset optimization                       
+ (d92a46dc)
+2018-06-24T08:55:55.0398819+05:45  [ERR] ERROR in src/app/components/app.component.ts(4,70): error TS2307: Cannot find module 'ng2-toasty'.
+src/app/components/app.component.ts(5,32): error TS2307: Cannot find module 'ngx-bootstrap/modal'.
+src/app/components/app.component.ts(7,86): error TS2307: Cannot find module '../services/alert.service'.
+src/app/components/app.component.ts(8,37): error TS2307: Cannot find module '../services/notification.service'.
+src/app/components/app.component.ts(9,39): error TS2307: Cannot find module '../services/app-translation.service'.
+src/app/components/app.component.ts(10,32): error TS2307: Cannot find module '../services/account.service'.
+src/app/components/app.component.ts(11,35): error TS2307: Cannot find module '../services/local-store-manager.service'.
+src/app/components/app.component.ts(12,33): error TS2307: Cannot find module '../services/app-title.service'.
+src/app/components/app.component.ts(13,29): error TS2307: Cannot find module '../services/auth.service'.
+src/app/components/app.component.ts(14,38): error TS2307: Cannot find module '../services/configuration.service'.
+src/app/components/app.component.ts(15,28): error TS2307: Cannot find module '../models/permission.model'.
+src/app/components/app.component.ts(16,32): error TS2307: Cannot find module '../components/login/login.component'.
+src/app/components/app.component.ts(19,5): error TS2441: Duplicate identifier 'require'. Compiler reserves name 'require' in top level scope of a module.
+
+
+ (58d949f4)
+2018-06-24T08:55:55.0750863+05:45 0HLEPG081N41R:00000001 [INF] Request finished in 13280.228ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-24T08:58:58.7570418+05:45  [INF] webpack: Compiling...
+ (28f66a4b)
+2018-06-24T08:59:05.9909445+05:45  [INF] Date: 2018-06-24T03:14:05.749Z
+ (885f3f15)
+2018-06-24T08:59:06.6710406+05:45  [INF] Hash: 96bfabad417c4a15863c
+Time: 6789ms
+chunk {inline} inline.bundle.js (inline) 5.79 kB [entry]
+chunk {main} main.bundle.js (main) 2.93 kB [initial]
+chunk {polyfills} polyfills.bundle.js (polyfills) 636 bytes [initial]
+chunk {styles} styles.bundle.css (styles) 140 kB [initial]
+chunk {vendor} vendor.bundle.js (vendor) 854 kB [initial]
+
+ (36a25855)
+2018-06-24T08:59:19.9300029+05:45  [INF] webpack: Compiled successfully.
+webpack: Compiling...
+ (4aeab1a6)
+2018-06-24T08:59:57.9131078+05:45  [ERR]   0% compiling 10% building modules 0/1 modules 1 active ...GGPMS\NGGPMS\ClientApp\src\styles.css                                          11% building modules 1/1 modules 0 active                               71% sealing 72% optimizing 73% basic module optimization       74% module optimization 75% advanced module optimization     76% basic chunk optimization 76% basic chunk optimization pass 2 76% basic chunk optimization pass 3 76% basic chunk optimization pass 4              77% chunk optimization 78% advanced chunk optimization 79% module and chunk tree optimization         80% chunk modules optimization 81% advanced chunk modules optimization                     82% module reviving 83% module order optimization    84% module id optimization         85% chunk reviving 86% chunk order optimization    87% chunk id optimization               88% hashing 89% module assets processing  90% chunk assets processing 91% additional chunk assets processing                          92% recording 91% additional asset processing    92% chunk asset optimization       94% asset optimization           95% emitting             ERROR in src/app/components/app.component.ts(4,70): error TS2307: Cannot find module 'ng2-toasty'.
+ (ba89d112)
+2018-06-24T09:37:56.1678382+05:45  [INF] Starting @angular/cli on port 46679... (5be51e84)
+2018-06-24T09:37:58.0274637+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NGGPMS " (9958f5bb)
+2018-06-24T09:38:05.1244746+05:45  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-24T09:38:05.1291151+05:45  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-24T09:38:05.1396008+05:45  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-06-24T09:38:05.1696279+05:45  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-06-24T09:38:05.4370365+05:45  [INF] Executed DbCommand ("60"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-24T09:38:05.4560031+05:45  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-24T09:38:05.8391093+05:45  [INF] > New_folder__2_@0.0.0 start C:\Users\user\Desktop\NGGPMS\NGGPMS\ClientApp
+> ng serve --extract-css "--port" "46679"
+
+** NG Live Development Server is listening on localhost:46679, open your browser on http://localhost:46679/ **
+ (59198a7a)
+2018-06-24T09:38:24.9050535+05:45  [INF] Date: 2018-06-24T03:53:24.897Z
+ (cb80026f)
+2018-06-24T09:38:24.9395451+05:45  [INF] Hash: 2efcca232eaddc8d301c
+Time: 18985ms
+chunk {inline} inline.bundle.js (inline) 5.79 kB [entry] [rendered]
+chunk {main} main.bundle.js (main) 62.1 kB [initial] [rendered]
+chunk {polyfills} polyfills.bundle.js (polyfills) 560 kB [initial] [rendered]
+chunk {styles} styles.bundle.css (styles) 116 kB [initial] [rendered]
+chunk {vendor} vendor.bundle.js (vendor) 9.24 MB [initial] [rendered]
+
+ (491bb120)
+2018-06-24T09:38:24.9396767+05:45  [INF] webpack: Compiled successfully.
+ (f274984e)
+2018-06-24T09:38:50.2428420+05:45 0HLEPGOAC14HF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-24T09:38:51.3778592+05:45 0HLEPGOAC14HF:00000001 [INF] Request finished in 1152.7815ms 200 text/html; charset=UTF-8 (791a596a)
+2018-06-24T09:38:51.4914461+05:45 0HLEPGOAC14HF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.bundle.css   (ca22a1cb)
+2018-06-24T09:38:51.4923746+05:45 0HLEPGOAC14HG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/inline.bundle.js   (ca22a1cb)
+2018-06-24T09:38:51.4934074+05:45 0HLEPGOAC14HI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.bundle.js   (ca22a1cb)
+2018-06-24T09:38:51.4934208+05:45 0HLEPGOAC14HJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.bundle.js   (ca22a1cb)
+2018-06-24T09:38:51.4940399+05:45 0HLEPGOAC14HH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.bundle.js   (ca22a1cb)
+2018-06-24T09:38:51.6542397+05:45 0HLEPGOAC14HH:00000001 [INF] Request finished in 160.2246ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-24T09:38:52.5091821+05:45 0HLEPGOAC14HJ:00000001 [INF] Request finished in 1015.7057ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-24T09:38:52.5331021+05:45 0HLEPGOAC14HF:00000002 [INF] Request finished in 1041.9408ms 200 text/css; charset=UTF-8 (791a596a)
+2018-06-24T09:38:52.5554914+05:45 0HLEPGOAC14HG:00000001 [INF] Request finished in 1064.2745ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-24T09:38:53.0573609+05:45 0HLEPGOAC14HI:00000001 [INF] Request finished in 1563.7694ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-24T09:38:54.0784089+05:45 0HLEPGOAC14HI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/glyphicons-halflings-regular.448c34a56d699c29117a.woff2   (ca22a1cb)
+2018-06-24T09:38:54.0839324+05:45 0HLEPGOAC14HI:00000002 [INF] Request finished in 5.5462ms 200 font/woff2; charset=UTF-8 (791a596a)
+2018-06-24T09:38:54.7720826+05:45 0HLEPGOAC14HI:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529812434767   (ca22a1cb)
+2018-06-24T09:38:54.7861119+05:45 0HLEPGOAC14HG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/favicon.ico   (ca22a1cb)
+2018-06-24T09:38:54.8021710+05:45 0HLEPGOAC14HG:00000002 [INF] Request finished in 16.031ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-24T09:38:54.8036386+05:45 0HLEPGOAC14HK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/125/xmx3qxsh/websocket   (ca22a1cb)
+2018-06-24T09:38:54.8806945+05:45 0HLEPGOAC14HI:00000003 [INF] Request finished in 108.6051ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-24T09:38:55.5761784+05:45 0HLEPGOAC14HG:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:43880/sockjs-node/125/qfzcmp15/xhr_streaming?t=1529812435572  0 (ca22a1cb)
+2018-06-24T09:39:03.7846684+05:45 0HLEPGOAC14HI:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/api/SampleData/WeatherForecasts   (ca22a1cb)
+2018-06-24T09:39:04.7898693+05:45 0HLEPGOAC14HI:00000004 [INF] Request finished in 1005.2319ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-24T09:39:58.9447878+05:45 0HLEPGOAC14HG:00000003 [INF] Request finished in 63368.6159ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-24T09:39:58.9715175+05:45 0HLEPGOAC14HK:00000001 [INF] Request finished in 64167.2859ms 101  (791a596a)

@@ -1,0 +1,815 @@
+2018-06-25T22:41:20.8836517+05:45  [INF] Starting @angular/cli on port 3026... (1d890426)
+2018-06-25T22:41:23.6089974+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NGGPMS " (9958f5bb)
+2018-06-25T22:41:29.8274468+05:45  [INF] > client-app@0.0.0 start F:\ASPDOTNETCORE\NGGPMS\NGGPMS
+> ng serve "--port" "3026"
+
+** Angular Live Development Server is listening on localhost:3026, open your browser on http://localhost:3026/ **
+ (dbeb03cd)
+2018-06-25T22:41:44.3527404+05:45  [INF] Executed DbCommand ("304"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-25T22:41:44.4010710+05:45  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-25T22:41:44.9909842+05:45  [INF] Executed DbCommand ("586"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-06-25T22:41:45.0873184+05:45  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-06-25T22:41:46.0438642+05:45  [INF] Executed DbCommand ("367"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-25T22:41:46.0812562+05:45  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-25T22:41:52.0715611+05:45 0HLEQNIITMMGK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-25T22:41:56.3133106+05:45  [INF] i ∩╜ówdm∩╜ú: wait until bundle finished: /
+ (5b9bec14)
+2018-06-25T22:42:15.9362860+05:45  [INF] Date: 2018-06-25T16:57:15.935Z
+Hash: a2c2fe3d47a6c6809811
+Time: 45709ms
+chunk {main} main.js, main.js.map (main) 559 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 487 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 324 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 6.52 MB [initial] [rendered]
+
+ (4c781ef4)
+2018-06-25T22:42:16.0032864+05:45  [INF] WARNING in ./styles.css
+(Emitted value instead of an instance of Error) autoprefixer: F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\assets\styles\alertify.bootstrap.css:68:5: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+
+WARNING in ./styles.css
+(Emitted value instead of an instance of Error) autoprefixer: F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\assets\styles\alertify.bootstrap.css:90:6: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+
+WARNING in Circular dependency detected:
+ClientApp\app\services\auth.service.ts -> ClientApp\app\services\endpoint-factory.service.ts -> ClientApp\app\services\auth.service.ts
+
+WARNING in Circular dependency detected:
+ClientApp\app\services\endpoint-factory.service.ts -> ClientApp\app\services\auth.service.ts -> ClientApp\app\services\endpoint-factory.service.ts
+i ∩╜ówdm∩╜ú: Compiled with warnings.
+ (5d0f2381)
+2018-06-25T22:42:16.1194323+05:45 0HLEQNIITMMGK:00000001 [INF] Request finished in 24087.8844ms 200 text/html; charset=UTF-8 (791a596a)
+2018-06-25T22:42:16.3109923+05:45 0HLEQNIITMMGK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-25T22:42:16.3126359+05:45 0HLEQNIITMMGM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-25T22:42:16.3127008+05:45 0HLEQNIITMMGN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-25T22:42:16.3130315+05:45 0HLEQNIITMMGO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js   (ca22a1cb)
+2018-06-25T22:42:16.3130586+05:45 0HLEQNIITMMGP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-25T22:42:16.3133266+05:45 0HLEQNIITMMGQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-25T22:42:16.5889707+05:45 0HLEQNIITMMGN:00000001 [INF] Request finished in 276.1836ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T22:42:17.6493982+05:45 0HLEQNIITMMGK:00000002 [INF] Request finished in 1338.4863ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T22:42:17.6771854+05:45 0HLEQNIITMMGO:00000001 [INF] Request finished in 1364.1237ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T22:42:17.6779502+05:45 0HLEQNIITMMGM:00000001 [INF] Request finished in 1365.3152ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T22:42:17.6874609+05:45 0HLEQNIITMMGQ:00000001 [INF] Request finished in 1374.089ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T22:42:18.2612860+05:45 0HLEQNIITMMGP:00000001 [INF] Request finished in 1948.171ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T22:42:22.1489398+05:45 0HLEQNIITMMGP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/i18n/en.json   (ca22a1cb)
+2018-06-25T22:42:22.1511456+05:45 0HLEQNIITMMGP:00000002 [INF] Request finished in 2.2306ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T22:42:22.5048013+05:45 0HLEQNIITMMGP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-06-25T22:42:22.5074035+05:45 0HLEQNIITMMGP:00000003 [INF] Request finished in 2.6106ms 200 font/woff2; charset=UTF-8 (791a596a)
+2018-06-25T22:42:22.9498881+05:45 0HLEQNIITMMGP:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529945842935   (ca22a1cb)
+2018-06-25T22:42:23.0262349+05:45 0HLEQNIITMMGQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/favicon.ico   (ca22a1cb)
+2018-06-25T22:42:23.0287269+05:45 0HLEQNIITMMGQ:00000002 [INF] Request finished in 2.5613ms 200 image/x-icon; charset=UTF-8 (791a596a)
+2018-06-25T22:42:23.1039735+05:45 0HLEQNIITMMGR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/115/dknkqxta/websocket   (ca22a1cb)
+2018-06-25T22:42:23.1103096+05:45 0HLEQNIITMMGP:00000004 [INF] Request finished in 160.3858ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T22:57:08.4243849+05:45 0HLEQNIITMMGR:00000001 [INF] Request finished in 885320.3872ms 101  (791a596a)
+2018-06-25T22:57:33.4400163+05:45  [INF] Starting @angular/cli on port 1924... (3b2e0b31)
+2018-06-25T22:57:34.7701983+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NGGPMS " (9958f5bb)
+2018-06-25T22:57:41.3577096+05:45  [INF] > client-app@0.0.0 start F:\ASPDOTNETCORE\NGGPMS\NGGPMS
+> ng serve "--port" "1924"
+
+** Angular Live Development Server is listening on localhost:1924, open your browser on http://localhost:1924/ **
+ (d8cd861d)
+2018-06-25T22:57:54.5563506+05:45  [FTL] Error whilst creating and seeding database (944fb156)
+System.AggregateException: One or more errors occurred. (A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)) ---> System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception: The system cannot find the file specified
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.<ExistsAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.<MigrateAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at NGGPMS.Program.Main(String[] args) in F:\ASPDOTNETCORE\NGGPMS\NGGPMS\Program.cs:line 35
+---> (Inner Exception #0) System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.<ExistsAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.<MigrateAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at DAL.DatabaseInitializer.<SeedAsync>d__4.MoveNext() in F:\ASPDOTNETCORE\NGGPMS\DAL\DatabaseInitializer.cs:line 39
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20<---
+
+2018-06-25T22:58:07.3489310+05:45 0HLEQNRLNRCI1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529946787197   (ca22a1cb)
+2018-06-25T22:58:08.7199951+05:45 0HLEQNRLNRCI1:00000001 [INF] Request finished in 1389.4872ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T22:58:08.8095499+05:45 0HLEQNRLNRCI2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/054/p14bnfhy/websocket   (ca22a1cb)
+2018-06-25T22:58:09.1508754+05:45  [INF] Date: 2018-06-25T17:13:09.146Z
+Hash: a2c2fe3d47a6c6809811
+Time: 27577ms
+chunk {main} main.js, main.js.map (main) 559 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 487 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 324 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 6.52 MB [initial] [rendered]
+
+ (1542fc2d)
+2018-06-25T22:58:09.2003181+05:45  [INF] WARNING in ./styles.css
+(Emitted value instead of an instance of Error) autoprefixer: F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\assets\styles\alertify.bootstrap.css:68:5: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+
+WARNING in ./styles.css
+(Emitted value instead of an instance of Error) autoprefixer: F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\assets\styles\alertify.bootstrap.css:90:6: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+
+WARNING in Circular dependency detected:
+ClientApp\app\services\auth.service.ts -> ClientApp\app\services\endpoint-factory.service.ts -> ClientApp\app\services\auth.service.ts
+
+WARNING in Circular dependency detected:
+ClientApp\app\services\endpoint-factory.service.ts -> ClientApp\app\services\auth.service.ts -> ClientApp\app\services\endpoint-factory.service.ts
+i ∩╜ówdm∩╜ú: Compiled with warnings.
+ (5d0f2381)
+2018-06-25T22:58:10.0790598+05:45 0HLEQNRLNRCI1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-25T22:58:10.3007599+05:45 0HLEQNRLNRCI1:00000002 [INF] Request finished in 221.5476ms 304  (791a596a)
+2018-06-25T22:58:10.4126848+05:45 0HLEQNRLNRCI2:00000001 [INF] Request finished in 1603.1816ms 101  (791a596a)
+2018-06-25T22:58:10.4190688+05:45 0HLEQNRLNRCI1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-25T22:58:10.4261421+05:45 0HLEQNRLNRCI3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-25T22:58:10.4263577+05:45 0HLEQNRLNRCI4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-25T22:58:10.4368555+05:45 0HLEQNRLNRCI6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-25T22:58:10.4368795+05:45 0HLEQNRLNRCI5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js   (ca22a1cb)
+2018-06-25T22:58:10.4382155+05:45 0HLEQNRLNRCI7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-25T22:58:10.8903468+05:45 0HLEQNRLNRCI1:00000003 [INF] Request finished in 471.2846ms 304  (791a596a)
+2018-06-25T22:58:11.5351569+05:45 0HLEQNRLNRCI3:00000001 [INF] Request finished in 1109.0156ms 304  (791a596a)
+2018-06-25T22:58:11.5525413+05:45 0HLEQNRLNRCI6:00000001 [INF] Request finished in 1115.6804ms 304  (791a596a)
+2018-06-25T22:58:11.5544894+05:45 0HLEQNRLNRCI4:00000001 [INF] Request finished in 1128.08ms 304  (791a596a)
+2018-06-25T22:58:11.5851227+05:45 0HLEQNRLNRCI7:00000001 [INF] Request finished in 1146.8987ms 304  (791a596a)
+2018-06-25T22:58:11.5870649+05:45 0HLEQNRLNRCI5:00000001 [INF] Request finished in 1150.2147ms 304  (791a596a)
+2018-06-25T22:58:14.8568601+05:45 0HLEQNRLNRCI8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/i18n/en.json   (ca22a1cb)
+2018-06-25T22:58:14.8610179+05:45 0HLEQNRLNRCI8:00000001 [INF] Request finished in 4.3075ms 304  (791a596a)
+2018-06-25T22:58:14.9922509+05:45 0HLEQNRLNRCI8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-06-25T22:58:14.9944157+05:45 0HLEQNRLNRCI8:00000002 [INF] Request finished in 2.1866ms 304  (791a596a)
+2018-06-25T22:58:15.0801464+05:45 0HLEQNRLNRCI8:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529946795076   (ca22a1cb)
+2018-06-25T22:58:15.0822402+05:45 0HLEQNRLNRCI8:00000003 [INF] Request finished in 2.1071ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T22:58:15.0926176+05:45 0HLEQNRLNRCI9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/066/hjewy4by/websocket   (ca22a1cb)
+2018-06-25T22:58:17.0611104+05:45 0HLEQNRLNRCI8:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:43880/sockjs-node/066/xu2jtjkb/xhr_streaming?t=1529946797049  0 (ca22a1cb)
+2018-06-25T22:58:17.0847295+05:45 0HLEQNRLNRCIA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/066/htnhlowv/eventsource   (ca22a1cb)
+2018-06-25T23:00:21.1596256+05:45 0HLEQNRLNRCIB:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 151 (ca22a1cb)
+2018-06-25T23:00:21.1639638+05:45 0HLEQNRLNRCIC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-06-25T23:00:22.2172878+05:45 0HLEQNRLNRCIB:00000001 [INF] Request finished in 1057.7062ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:00:22.2257313+05:45 0HLEQNRLNRCIC:00000001 [INF] Request finished in 1061.7244ms 200 font/woff2; charset=UTF-8 (791a596a)
+2018-06-25T23:00:27.4406728+05:45 0HLEQNRLNRCIC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js.map   (ca22a1cb)
+2018-06-25T23:00:27.4468279+05:45 0HLEQNRLNRCIB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js.map   (ca22a1cb)
+2018-06-25T23:00:27.4486155+05:45 0HLEQNRLNRCID:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js.map   (ca22a1cb)
+2018-06-25T23:00:27.4526315+05:45 0HLEQNRLNRCIE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js.map   (ca22a1cb)
+2018-06-25T23:00:28.4520617+05:45 0HLEQNRLNRCIC:00000002 [INF] Request finished in 1011.4386ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:00:28.4531052+05:45 0HLEQNRLNRCIC:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js.map   (ca22a1cb)
+2018-06-25T23:00:28.5051008+05:45 0HLEQNRLNRCID:00000001 [INF] Request finished in 1056.4066ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:00:28.5093573+05:45 0HLEQNRLNRCIB:00000002 [INF] Request finished in 1060.2835ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:00:28.5102862+05:45 0HLEQNRLNRCIE:00000001 [INF] Request finished in 1057.6595ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:00:28.5182004+05:45 0HLEQNRLNRCIB:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js.map   (ca22a1cb)
+2018-06-25T23:00:28.5281533+05:45 0HLEQNRLNRCID:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap.css.map   (ca22a1cb)
+2018-06-25T23:00:28.5286159+05:45 0HLEQNRLNRCIE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap-select.css.map   (ca22a1cb)
+2018-06-25T23:00:28.5577529+05:45 0HLEQNRLNRCIE:00000002 [INF] Request finished in 29.1262ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:00:28.5668613+05:45 0HLEQNRLNRCIE:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap-datepicker3.css.map   (ca22a1cb)
+2018-06-25T23:00:28.5768297+05:45 0HLEQNRLNRCID:00000002 [INF] Request finished in 48.7044ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:00:28.5974293+05:45 0HLEQNRLNRCIB:00000003 [INF] Request finished in 79.3333ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:00:28.6046155+05:45 0HLEQNRLNRCIE:00000003 [INF] Request finished in 37.7706ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:00:28.6416000+05:45 0HLEQNRLNRCIC:00000003 [INF] Request finished in 188.4849ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:03:13.0658296+05:45 0HLEQNRLNRCI8:00000004 [INF] Request finished in 296004.9595ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T23:03:13.0674251+05:45 0HLEQNRLNRCIA:00000001 [INF] Request finished in 295982.7075ms 200 text/event-stream (791a596a)
+2018-06-25T23:03:13.1026456+05:45 0HLEQNRLNRCIA:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:43880/sockjs-node/066/xu2jtjkb/xhr_streaming?t=1529947093088  0 (ca22a1cb)
+2018-06-25T23:03:13.1033882+05:45 0HLEQNRLNRCIA:00000002 [INF] Request finished in 0.7737ms 200  (791a596a)
+2018-06-25T23:03:13.1623763+05:45 0HLEQNRLNRCI9:00000001 [INF] Request finished in 298069.7693ms 101  (791a596a)
+2018-06-25T23:03:28.3100865+05:45  [INF] Starting @angular/cli on port 2589... (25e99700)
+2018-06-25T23:03:29.6370058+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NGGPMS " (9958f5bb)
+2018-06-25T23:03:30.0673873+05:45  [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-25T23:03:30.0716944+05:45  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-25T23:03:30.1184767+05:45  [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-06-25T23:03:30.1346483+05:45  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-06-25T23:03:30.4667613+05:45  [INF] Executed DbCommand ("138"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-25T23:03:30.4996253+05:45  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-25T23:03:30.6662729+05:45 0HLEQNUM3D42C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/066/htnhlowv/eventsource   (ca22a1cb)
+2018-06-25T23:03:36.4290586+05:45  [INF] > client-app@0.0.0 start F:\ASPDOTNETCORE\NGGPMS\NGGPMS
+> ng serve "--port" "2589"
+
+** Angular Live Development Server is listening on localhost:2589, open your browser on http://localhost:2589/ **
+ (5a877e67)
+2018-06-25T23:03:49.8559823+05:45 0HLEQNUM3D42C:00000001 [INF] Request finished in 19218.0134ms 200 text/event-stream (791a596a)
+2018-06-25T23:03:51.0207402+05:45 0HLEQNUM3D42E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529947130945   (ca22a1cb)
+2018-06-25T23:03:52.3443519+05:45 0HLEQNUM3D42E:00000001 [INF] Request finished in 1323.5823ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:03:52.3858497+05:45 0HLEQNUM3D42F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/647/fojlfu4y/websocket   (ca22a1cb)
+2018-06-25T23:04:01.6803836+05:45  [INF] Date: 2018-06-25T17:19:01.671Z
+Hash: a2c2fe3d47a6c6809811
+Time: 25023ms
+chunk {main} main.js, main.js.map (main) 559 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 487 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 324 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 6.52 MB [initial] [rendered]
+
+ (b48e6b03)
+2018-06-25T23:04:01.7780944+05:45 0HLEQNUM3D42E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-25T23:04:01.7973547+05:45  [INF] WARNING in ./styles.css
+(Emitted value instead of an instance of Error) autoprefixer: F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\assets\styles\alertify.bootstrap.css:68:5: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+
+WARNING in ./styles.css
+(Emitted value instead of an instance of Error) autoprefixer: F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\assets\styles\alertify.bootstrap.css:90:6: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+
+WARNING in Circular dependency detected:
+ClientApp\app\services\auth.service.ts -> ClientApp\app\services\endpoint-factory.service.ts -> ClientApp\app\services\auth.service.ts
+
+WARNING in Circular dependency detected:
+ClientApp\app\services\endpoint-factory.service.ts -> ClientApp\app\services\auth.service.ts -> ClientApp\app\services\endpoint-factory.service.ts
+i ∩╜ówdm∩╜ú: Compiled with warnings.
+ (5d0f2381)
+2018-06-25T23:04:03.1942358+05:45 0HLEQNUM3D42E:00000002 [INF] Request finished in 1416.1535ms 304  (791a596a)
+2018-06-25T23:04:03.2514292+05:45 0HLEQNUM3D42E:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-25T23:04:03.2522367+05:45 0HLEQNUM3D42G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-25T23:04:03.2523260+05:45 0HLEQNUM3D42H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-25T23:04:03.2526590+05:45 0HLEQNUM3D42I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js   (ca22a1cb)
+2018-06-25T23:04:03.2527506+05:45 0HLEQNUM3D42J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-25T23:04:03.2529030+05:45 0HLEQNUM3D42K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-25T23:04:03.2693594+05:45 0HLEQNUM3D42F:00000001 [INF] Request finished in 10883.5301ms 101  (791a596a)
+2018-06-25T23:04:03.6648182+05:45 0HLEQNUM3D42K:00000001 [INF] Request finished in 411.8846ms 304  (791a596a)
+2018-06-25T23:04:04.2794989+05:45 0HLEQNUM3D42I:00000001 [INF] Request finished in 1026.8209ms 304  (791a596a)
+2018-06-25T23:04:04.2823438+05:45 0HLEQNUM3D42H:00000001 [INF] Request finished in 1029.9991ms 304  (791a596a)
+2018-06-25T23:04:04.2855452+05:45 0HLEQNUM3D42G:00000001 [INF] Request finished in 1033.444ms 304  (791a596a)
+2018-06-25T23:04:04.4459066+05:45 0HLEQNUM3D42E:00000003 [INF] Request finished in 1194.4956ms 304  (791a596a)
+2018-06-25T23:04:04.4707289+05:45 0HLEQNUM3D42J:00000001 [INF] Request finished in 1217.9329ms 304  (791a596a)
+2018-06-25T23:04:04.9711610+05:45 0HLEQNUM3D42J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js.map   (ca22a1cb)
+2018-06-25T23:04:04.9717655+05:45 0HLEQNUM3D42E:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js.map   (ca22a1cb)
+2018-06-25T23:04:04.9720495+05:45 0HLEQNUM3D42G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js.map   (ca22a1cb)
+2018-06-25T23:04:04.9723264+05:45 0HLEQNUM3D42H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js.map   (ca22a1cb)
+2018-06-25T23:04:04.9726757+05:45 0HLEQNUM3D42I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap.css.map   (ca22a1cb)
+2018-06-25T23:04:04.9868504+05:45 0HLEQNUM3D42K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap-select.css.map   (ca22a1cb)
+2018-06-25T23:04:05.0131864+05:45 0HLEQNUM3D42G:00000002 [INF] Request finished in 41.1102ms 304  (791a596a)
+2018-06-25T23:04:05.0147157+05:45 0HLEQNUM3D42I:00000002 [INF] Request finished in 41.8649ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:04:05.0152504+05:45 0HLEQNUM3D42H:00000002 [INF] Request finished in 42.8751ms 304  (791a596a)
+2018-06-25T23:04:05.0340002+05:45 0HLEQNUM3D42G:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap-datepicker3.css.map   (ca22a1cb)
+2018-06-25T23:04:05.0462993+05:45 0HLEQNUM3D42K:00000002 [INF] Request finished in 59.4653ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:04:05.0468037+05:45 0HLEQNUM3D42E:00000004 [INF] Request finished in 75.0391ms 304  (791a596a)
+2018-06-25T23:04:05.0586984+05:45 0HLEQNUM3D42J:00000002 [INF] Request finished in 87.2289ms 304  (791a596a)
+2018-06-25T23:04:05.0750024+05:45 0HLEQNUM3D42G:00000003 [INF] Request finished in 41.008ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:04:07.5011564+05:45 0HLEQNUM3D42G:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js.map   (ca22a1cb)
+2018-06-25T23:04:07.5016199+05:45 0HLEQNUM3D42K:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js.map   (ca22a1cb)
+2018-06-25T23:04:07.5297822+05:45 0HLEQNUM3D42K:00000003 [INF] Request finished in 28.164ms 304  (791a596a)
+2018-06-25T23:04:07.5316249+05:45 0HLEQNUM3D42G:00000004 [INF] Request finished in 30.4626ms 304  (791a596a)
+2018-06-25T23:04:07.5723862+05:45 0HLEQNUM3D42G:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/i18n/en.json   (ca22a1cb)
+2018-06-25T23:04:07.6269956+05:45 0HLEQNUM3D42G:00000005 [INF] Request finished in 54.6075ms 304  (791a596a)
+2018-06-25T23:04:07.6979480+05:45 0HLEQNUM3D42G:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-06-25T23:04:07.7529436+05:45 0HLEQNUM3D42G:00000006 [INF] Request finished in 54.992ms 304  (791a596a)
+2018-06-25T23:04:07.7987810+05:45 0HLEQNUM3D42G:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529947147785   (ca22a1cb)
+2018-06-25T23:04:07.8064885+05:45 0HLEQNUM3D42G:00000007 [INF] Request finished in 6.0533ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:04:07.9241934+05:45 0HLEQNUM3D42L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/747/n0aqv5gh/websocket   (ca22a1cb)
+2018-06-25T23:04:08.5817405+05:45 0HLEQNUM3D42G:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:43880/sockjs-node/747/kg0uneky/xhr_streaming?t=1529947148577  0 (ca22a1cb)
+2018-06-25T23:04:44.0861558+05:45 0HLEQNUM3D42K:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 154 (ca22a1cb)
+2018-06-25T23:04:44.0926100+05:45 0HLEQNUM3D42I:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-06-25T23:04:45.0940589+05:45 0HLEQNUM3D42K:00000004 [INF] Request finished in 1007.8893ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:04:45.1212767+05:45 0HLEQNUM3D42I:00000003 [INF] Request finished in 1028.5946ms 304  (791a596a)
+2018-06-25T23:05:22.5831013+05:45 0HLEQNUM3D42I:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 154 (ca22a1cb)
+2018-06-25T23:05:23.5929507+05:45 0HLEQNUM3D42I:00000004 [INF] Request finished in 1009.8866ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:05:25.4251880+05:45 0HLEQNUM3D42I:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 154 (ca22a1cb)
+2018-06-25T23:05:25.4291044+05:45 0HLEQNUM3D42I:00000005 [INF] Request finished in 3.9351ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:05:55.1679691+05:45 0HLEQNUM3D42I:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 151 (ca22a1cb)
+2018-06-25T23:05:56.1826447+05:45 0HLEQNUM3D42I:00000006 [INF] Request finished in 1014.6791ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:06:00.2702812+05:45 0HLEQNUM3D42I:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 151 (ca22a1cb)
+2018-06-25T23:06:00.2727767+05:45 0HLEQNUM3D42I:00000007 [INF] Request finished in 2.5164ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:06:38.3225541+05:45 0HLEQNUM3D42I:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 151 (ca22a1cb)
+2018-06-25T23:06:39.3328590+05:45 0HLEQNUM3D42I:00000008 [INF] Request finished in 1010.3742ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:06:43.7503018+05:45 0HLEQNUM3D42I:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js.map   (ca22a1cb)
+2018-06-25T23:06:43.7544134+05:45 0HLEQNUM3D42K:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js.map   (ca22a1cb)
+2018-06-25T23:06:43.7659036+05:45 0HLEQNUM3D42I:00000009 [INF] Request finished in 15.5417ms 304  (791a596a)
+2018-06-25T23:06:43.7921103+05:45 0HLEQNUM3D42I:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js.map   (ca22a1cb)
+2018-06-25T23:06:43.7946557+05:45 0HLEQNUM3D42M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js.map   (ca22a1cb)
+2018-06-25T23:06:43.8023970+05:45 0HLEQNUM3D42N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js.map   (ca22a1cb)
+2018-06-25T23:06:43.8056827+05:45 0HLEQNUM3D42O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js.map   (ca22a1cb)
+2018-06-25T23:06:43.8104823+05:45 0HLEQNUM3D42I:0000000A [INF] Request finished in 18.3822ms 304  (791a596a)
+2018-06-25T23:06:43.9612122+05:45 0HLEQNUM3D42I:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap.css.map   (ca22a1cb)
+2018-06-25T23:06:43.9765357+05:45 0HLEQNUM3D42I:0000000B [INF] Request finished in 15.304ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:06:43.9774411+05:45 0HLEQNUM3D42I:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap-select.css.map   (ca22a1cb)
+2018-06-25T23:06:43.9906451+05:45 0HLEQNUM3D42I:0000000C [INF] Request finished in 13.0773ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:06:43.9915993+05:45 0HLEQNUM3D42I:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap-datepicker3.css.map   (ca22a1cb)
+2018-06-25T23:06:43.9990846+05:45 0HLEQNUM3D42I:0000000D [INF] Request finished in 7.4848ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:06:44.7713441+05:45 0HLEQNUM3D42K:00000005 [INF] Request finished in 1016.9391ms 304  (791a596a)
+2018-06-25T23:06:44.8194254+05:45 0HLEQNUM3D42M:00000001 [INF] Request finished in 1024.7817ms 304  (791a596a)
+2018-06-25T23:06:44.8203432+05:45 0HLEQNUM3D42N:00000001 [INF] Request finished in 1017.9764ms 304  (791a596a)
+2018-06-25T23:06:44.8380032+05:45 0HLEQNUM3D42O:00000001 [INF] Request finished in 1032.3297ms 304  (791a596a)
+2018-06-25T23:07:11.0073117+05:45 0HLEQNUM3D42O:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/connect/token   (ca22a1cb)
+2018-06-25T23:07:12.0454367+05:45 0HLEQNUM3D42O:00000002 [INF] Request finished in 1038.1862ms 200 text/html; charset=UTF-8 (791a596a)
+2018-06-25T23:07:12.0597305+05:45 0HLEQNUM3D42O:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-25T23:07:12.0621874+05:45 0HLEQNUM3D42M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-25T23:07:12.0638904+05:45 0HLEQNUM3D42N:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-25T23:07:12.0641962+05:45 0HLEQNUM3D42I:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-25T23:07:12.0643846+05:45 0HLEQNUM3D42K:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js   (ca22a1cb)
+2018-06-25T23:07:12.0680736+05:45 0HLEQNUM3D42K:00000006 [INF] Request finished in 4.0906ms 304  (791a596a)
+2018-06-25T23:07:12.0695283+05:45 0HLEQNUM3D42K:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-25T23:07:12.0760135+05:45 0HLEQNUM3D42K:00000007 [INF] Request finished in 7.0702ms 304  (791a596a)
+2018-06-25T23:07:13.0761443+05:45 0HLEQNUM3D42O:00000003 [INF] Request finished in 1016.5311ms 304  (791a596a)
+2018-06-25T23:07:13.0789363+05:45 0HLEQNUM3D42M:00000002 [INF] Request finished in 1016.6773ms 304  (791a596a)
+2018-06-25T23:07:13.0908020+05:45 0HLEQNUM3D42I:0000000E [INF] Request finished in 1026.5795ms 304  (791a596a)
+2018-06-25T23:07:13.0925354+05:45 0HLEQNUM3D42N:00000002 [INF] Request finished in 1028.6591ms 304  (791a596a)
+2018-06-25T23:07:15.7031259+05:45 0HLEQNUM3D42N:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/i18n/en.json   (ca22a1cb)
+2018-06-25T23:07:15.7052814+05:45 0HLEQNUM3D42N:00000003 [INF] Request finished in 2.188ms 304  (791a596a)
+2018-06-25T23:07:37.2876483+05:45 0HLEQNUM3D42N:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-25T23:07:37.2878892+05:45 0HLEQNUM3D42I:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529947357284   (ca22a1cb)
+2018-06-25T23:07:38.2962652+05:45 0HLEQNUM3D42N:00000004 [INF] Request finished in 1008.6728ms 304  (791a596a)
+2018-06-25T23:07:38.3021856+05:45 0HLEQNUM3D42I:0000000F [INF] Request finished in 1014.2444ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:07:38.3096377+05:45 0HLEQNUM3D42N:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-25T23:07:38.3133546+05:45 0HLEQNUM3D42K:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js   (ca22a1cb)
+2018-06-25T23:07:38.3133795+05:45 0HLEQNUM3D42O:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-25T23:07:38.3137826+05:45 0HLEQNUM3D42P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-25T23:07:38.3139395+05:45 0HLEQNUM3D42M:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-25T23:07:38.3174585+05:45 0HLEQNUM3D42N:00000005 [INF] Request finished in 7.7724ms 304  (791a596a)
+2018-06-25T23:07:38.3189808+05:45 0HLEQNUM3D42N:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-25T23:07:38.3344994+05:45 0HLEQNUM3D42P:00000001 [INF] Request finished in 20.5426ms 304  (791a596a)
+2018-06-25T23:07:38.3357172+05:45 0HLEQNUM3D42O:00000004 [INF] Request finished in 22.0524ms 304  (791a596a)
+2018-06-25T23:07:39.3211981+05:45 0HLEQNUM3D42K:00000008 [INF] Request finished in 1007.8315ms 304  (791a596a)
+2018-06-25T23:07:39.3229119+05:45 0HLEQNUM3D42M:00000003 [INF] Request finished in 1008.9715ms 304  (791a596a)
+2018-06-25T23:07:39.3296807+05:45 0HLEQNUM3D42N:00000006 [INF] Request finished in 1010.6951ms 304  (791a596a)
+2018-06-25T23:07:40.9573984+05:45 0HLEQNUM3D42N:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/i18n/en.json   (ca22a1cb)
+2018-06-25T23:07:40.9596646+05:45 0HLEQNUM3D42N:00000007 [INF] Request finished in 2.2328ms 304  (791a596a)
+2018-06-25T23:07:41.0083038+05:45 0HLEQNUM3D42N:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:43880/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-06-25T23:07:41.0106078+05:45 0HLEQNUM3D42N:00000008 [INF] Request finished in 2.316ms 304  (791a596a)
+2018-06-25T23:07:41.0647068+05:45 0HLEQNUM3D42N:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529947361063   (ca22a1cb)
+2018-06-25T23:07:41.0664917+05:45 0HLEQNUM3D42N:00000009 [INF] Request finished in 1.784ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:07:41.0726482+05:45 0HLEQNUM3D42Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/597/l3luvelq/websocket   (ca22a1cb)
+2018-06-25T23:07:41.7183623+05:45 0HLEQNUM3D42N:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:43880/sockjs-node/597/xsxz4100/xhr_streaming?t=1529947361716  0 (ca22a1cb)
+2018-06-25T23:07:51.9900219+05:45 0HLEQNUM3D42M:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 151 (ca22a1cb)
+2018-06-25T23:07:51.9949544+05:45 0HLEQNUM3D42K:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:43880/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-06-25T23:07:52.9996873+05:45 0HLEQNUM3D42M:00000004 [INF] Request finished in 1009.6808ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:07:53.0024793+05:45 0HLEQNUM3D42K:00000009 [INF] Request finished in 1007.5128ms 304  (791a596a)
+2018-06-25T23:08:09.2041105+05:45 0HLEQNUM3D42K:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js.map   (ca22a1cb)
+2018-06-25T23:08:09.2054736+05:45 0HLEQNUM3D42M:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js.map   (ca22a1cb)
+2018-06-25T23:08:09.2058403+05:45 0HLEQNUM3D42O:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js.map   (ca22a1cb)
+2018-06-25T23:08:09.2061496+05:45 0HLEQNUM3D42P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js.map   (ca22a1cb)
+2018-06-25T23:08:10.2234131+05:45 0HLEQNUM3D42K:0000000A [INF] Request finished in 1019.3444ms 304  (791a596a)
+2018-06-25T23:08:10.2241985+05:45 0HLEQNUM3D42K:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js.map   (ca22a1cb)
+2018-06-25T23:08:10.2261971+05:45 0HLEQNUM3D42O:00000005 [INF] Request finished in 1020.3466ms 304  (791a596a)
+2018-06-25T23:08:10.2270523+05:45 0HLEQNUM3D42O:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js.map   (ca22a1cb)
+2018-06-25T23:08:10.2478003+05:45 0HLEQNUM3D42M:00000005 [INF] Request finished in 1042.2826ms 304  (791a596a)
+2018-06-25T23:08:10.2487763+05:45 0HLEQNUM3D42M:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap.css.map   (ca22a1cb)
+2018-06-25T23:08:10.2499408+05:45 0HLEQNUM3D42P:00000002 [INF] Request finished in 1043.7142ms 304  (791a596a)
+2018-06-25T23:08:10.2509252+05:45 0HLEQNUM3D42P:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap-select.css.map   (ca22a1cb)
+2018-06-25T23:08:10.2516954+05:45 0HLEQNUM3D42K:0000000B [INF] Request finished in 27.5182ms 304  (791a596a)
+2018-06-25T23:08:10.2527106+05:45 0HLEQNUM3D42O:00000006 [INF] Request finished in 25.684ms 304  (791a596a)
+2018-06-25T23:08:10.2542768+05:45 0HLEQNUM3D42K:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap-datepicker3.css.map   (ca22a1cb)
+2018-06-25T23:08:10.2590745+05:45 0HLEQNUM3D42M:00000006 [INF] Request finished in 10.2902ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:08:10.2595559+05:45 0HLEQNUM3D42P:00000003 [INF] Request finished in 8.6564ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:08:10.2799776+05:45 0HLEQNUM3D42K:0000000C [INF] Request finished in 25.6209ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:08:51.1226415+05:45 0HLEQNUM3D42K:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js.map   (ca22a1cb)
+2018-06-25T23:08:51.1234033+05:45 0HLEQNUM3D42P:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js.map   (ca22a1cb)
+2018-06-25T23:08:51.1252158+05:45 0HLEQNUM3D42M:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js.map   (ca22a1cb)
+2018-06-25T23:08:51.1258282+05:45 0HLEQNUM3D42O:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js.map   (ca22a1cb)
+2018-06-25T23:08:52.1357389+05:45 0HLEQNUM3D42P:00000004 [INF] Request finished in 1012.3333ms 304  (791a596a)
+2018-06-25T23:08:52.1364767+05:45 0HLEQNUM3D42P:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js.map   (ca22a1cb)
+2018-06-25T23:08:52.1375091+05:45 0HLEQNUM3D42K:0000000D [INF] Request finished in 1014.9524ms 304  (791a596a)
+2018-06-25T23:08:52.1424456+05:45 0HLEQNUM3D42K:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js.map   (ca22a1cb)
+2018-06-25T23:08:52.1443038+05:45 0HLEQNUM3D42M:00000007 [INF] Request finished in 1019.0955ms 304  (791a596a)
+2018-06-25T23:08:52.1453167+05:45 0HLEQNUM3D42M:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap.css.map   (ca22a1cb)
+2018-06-25T23:08:52.1461283+05:45 0HLEQNUM3D42O:00000007 [INF] Request finished in 1020.2937ms 304  (791a596a)
+2018-06-25T23:08:52.1494447+05:45 0HLEQNUM3D42O:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap-select.css.map   (ca22a1cb)
+2018-06-25T23:08:52.1699185+05:45 0HLEQNUM3D42M:00000008 [INF] Request finished in 24.5964ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:08:52.1706287+05:45 0HLEQNUM3D42P:00000005 [INF] Request finished in 34.1737ms 304  (791a596a)
+2018-06-25T23:08:52.1709847+05:45 0HLEQNUM3D42K:0000000E [INF] Request finished in 28.5417ms 304  (791a596a)
+2018-06-25T23:08:52.1710794+05:45 0HLEQNUM3D42P:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap-datepicker3.css.map   (ca22a1cb)
+2018-06-25T23:08:52.1847718+05:45 0HLEQNUM3D42O:00000008 [INF] Request finished in 35.3289ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:08:52.1875932+05:45 0HLEQNUM3D42P:00000006 [INF] Request finished in 16.4928ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:09:45.7698863+05:45 0HLEQNUM3D42P:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 151 (ca22a1cb)
+2018-06-25T23:09:46.8011668+05:45 0HLEQNUM3D42P:00000007 [INF] Request finished in 1031.3662ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:11:44.2015643+05:45 0HLEQNUM3D42P:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 151 (ca22a1cb)
+2018-06-25T23:11:45.2307407+05:45 0HLEQNUM3D42P:00000008 [INF] Request finished in 1029.2444ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:14:39.1127673+05:45 0HLEQNUM3D42R:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 151 (ca22a1cb)
+2018-06-25T23:14:40.1209589+05:45 0HLEQNUM3D42R:00000001 [INF] Request finished in 1008.3493ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:15:46.8611695+05:45 0HLEQNUM3D42R:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 151 (ca22a1cb)
+2018-06-25T23:15:47.8809970+05:45 0HLEQNUM3D42R:00000002 [INF] Request finished in 1019.8844ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:17:31.2155407+05:45 0HLEQNUM3D42R:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 151 (ca22a1cb)
+2018-06-25T23:17:32.2355732+05:45 0HLEQNUM3D42R:00000003 [INF] Request finished in 1020.1128ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:22:04.6554302+05:45 0HLEQNUM3D42G:00000008 [INF] Request finished in 1076073.5795ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T23:22:04.7553636+05:45 0HLEQNUM3D42L:00000001 [INF] Request finished in 1076831.1883ms 101  (791a596a)
+2018-06-25T23:25:00.3868012+05:45 0HLEQNUM3D42T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-25T23:25:01.4128751+05:45 0HLEQNUM3D42T:00000001 [INF] Request finished in 1026.136ms 200 text/html; charset=UTF-8 (791a596a)
+2018-06-25T23:25:01.4777453+05:45 0HLEQNUM3D42T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-25T23:25:01.4787097+05:45 0HLEQNUM3D42U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-25T23:25:01.4794164+05:45 0HLEQNUM3D42V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-25T23:25:01.4804306+05:45 0HLEQNUM3D430:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js   (ca22a1cb)
+2018-06-25T23:25:01.4813453+05:45 0HLEQNUM3D431:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-25T23:25:01.4828733+05:45 0HLEQNUM3D432:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-25T23:25:01.5160417+05:45 0HLEQNUM3D432:00000001 [INF] Request finished in 33.1333ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T23:25:01.5333911+05:45 0HLEQNUM3D430:00000001 [INF] Request finished in 52.8302ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T23:25:02.5675195+05:45 0HLEQNUM3D42V:00000001 [INF] Request finished in 1088.0467ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T23:25:02.5726440+05:45 0HLEQNUM3D42T:00000002 [INF] Request finished in 1094.8987ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T23:25:02.5848133+05:45 0HLEQNUM3D42U:00000001 [INF] Request finished in 1106.1ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T23:25:03.1436176+05:45 0HLEQNUM3D431:00000001 [INF] Request finished in 1662.222ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T23:25:04.4479550+05:45 0HLEQNUM3D433:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js.map   (ca22a1cb)
+2018-06-25T23:25:04.4514750+05:45 0HLEQNUM3D433:00000001 [INF] Request finished in 3.5244ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:25:04.4661386+05:45 0HLEQNUM3D433:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:43880/webpack.config.js   (ca22a1cb)
+2018-06-25T23:25:04.4692728+05:45 0HLEQNUM3D433:00000002 [INF] Request finished in 3.12ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:25:04.6246423+05:45 0HLEQNUM3D433:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js.map   (ca22a1cb)
+2018-06-25T23:25:04.6312414+05:45 0HLEQNUM3D433:00000003 [INF] Request finished in 6.6471ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:25:04.6333245+05:45 0HLEQNUM3D433:00000004 [INF] Request starting HTTP/1.1 HEAD http://localhost:43880/webpack.config.js   (ca22a1cb)
+2018-06-25T23:25:04.6361280+05:45 0HLEQNUM3D433:00000004 [INF] Request finished in 2.7275ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:25:04.9343184+05:45 0HLEQNUM3D433:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js.map   (ca22a1cb)
+2018-06-25T23:25:04.9469944+05:45 0HLEQNUM3D433:00000005 [INF] Request finished in 12.6711ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:25:04.9525340+05:45 0HLEQNUM3D433:00000006 [INF] Request starting HTTP/1.1 HEAD http://localhost:43880/webpack.config.js   (ca22a1cb)
+2018-06-25T23:25:04.9573192+05:45 0HLEQNUM3D433:00000006 [INF] Request finished in 4.7142ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:25:05.0186686+05:45 0HLEQNUM3D433:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js.map   (ca22a1cb)
+2018-06-25T23:25:05.0292300+05:45 0HLEQNUM3D433:00000007 [INF] Request finished in 10.5551ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:25:05.0364073+05:45 0HLEQNUM3D433:00000008 [INF] Request starting HTTP/1.1 HEAD http://localhost:43880/webpack.config.js   (ca22a1cb)
+2018-06-25T23:25:05.0391825+05:45 0HLEQNUM3D433:00000008 [INF] Request finished in 2.752ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:25:05.0589984+05:45 0HLEQNUM3D433:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js.map   (ca22a1cb)
+2018-06-25T23:25:05.2184443+05:45 0HLEQNUM3D433:00000009 [INF] Request finished in 159.4747ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:25:05.2361807+05:45 0HLEQNUM3D433:0000000A [INF] Request starting HTTP/1.1 HEAD http://localhost:43880/webpack.config.js   (ca22a1cb)
+2018-06-25T23:25:05.2435368+05:45 0HLEQNUM3D433:0000000A [INF] Request finished in 7.3728ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:25:05.5506062+05:45  [INF] Starting @angular/cli on port 4527... (60fa7cfc)
+2018-06-25T23:25:11.0151193+05:45 0HLEQNUM3D434:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/i18n/en.json   (ca22a1cb)
+2018-06-25T23:25:12.0330188+05:45 0HLEQNUM3D434:00000001 [INF] Request finished in 1017.9155ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:25:13.2069451+05:45 0HLEQNUM3D434:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-06-25T23:25:13.2102642+05:45 0HLEQNUM3D434:00000002 [INF] Request finished in 3.308ms 200 font/woff2; charset=UTF-8 (791a596a)
+2018-06-25T23:25:15.0650757+05:45 0HLEQNUM3D434:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529948415043   (ca22a1cb)
+2018-06-25T23:25:15.0679918+05:45 0HLEQNUM3D434:00000003 [INF] Request finished in 2.8671ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:25:15.1037056+05:45 0HLEQNUM3D435:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/412/lg22zpeg/websocket   (ca22a1cb)
+2018-06-25T23:25:16.9648375+05:45 0HLEQNUM3D433:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js.map   (ca22a1cb)
+2018-06-25T23:25:17.1015420+05:45 0HLEQNUM3D433:0000000B [INF] Request finished in 136.6996ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:25:17.1146531+05:45 0HLEQNUM3D433:0000000C [INF] Request starting HTTP/1.1 HEAD http://localhost:43880/webpack.config.js   (ca22a1cb)
+2018-06-25T23:25:17.1597083+05:45 0HLEQNUM3D433:0000000C [INF] Request finished in 45.0604ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:25:17.1878185+05:45  [INF] > client-app@0.0.0 start F:\ASPDOTNETCORE\NGGPMS\NGGPMS
+> ng serve "--port" "4527"
+
+** Angular Live Development Server is listening on localhost:4527, open your browser on http://localhost:4527/ **
+ (3237bc26)
+2018-06-25T23:25:23.4338297+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NGGPMS " (9958f5bb)
+2018-06-25T23:25:25.7645987+05:45  [INF] Executed DbCommand ("277"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-25T23:25:25.8707152+05:45  [INF] Executed DbCommand ("86"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-25T23:25:26.1166958+05:45  [INF] Executed DbCommand ("89"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-06-25T23:25:29.8949402+05:45  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-06-25T23:25:30.6647983+05:45  [INF] Executed DbCommand ("115"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-25T23:25:30.7263894+05:45  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-25T23:25:35.4768408+05:45  [FTL] Unable to start Kestrel. (fc6a528d)
+System.IO.IOException: Failed to bind to address http://127.0.0.1:43880: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.tcp_getsockname(UvTcpHandle handle, SockAddr& addr, Int32& namelen)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.CreateListenSocket()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.CallbackAdapter`1.<>c.<.cctor>b__3_1(Object callback, Object state)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindLocalhostAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__21`1.MoveNext()
+2018-06-25T23:26:12.3296155+05:45 0HLEQNUM3D42Q:00000001 [INF] Request finished in 1111256.9374ms 101  (791a596a)
+2018-06-25T23:26:12.3297083+05:45 0HLEQNUM3D435:00000001 [INF] Request finished in 57226.0641ms 101  (791a596a)
+2018-06-25T23:26:12.3306168+05:45 0HLEQNUM3D42N:0000000A [INF] Request finished in 1110612.258ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-06-25T23:26:39.1871434+05:45  [INF] Starting @angular/cli on port 4717... (fa49c0bf)
+2018-06-25T23:26:41.5241102+05:45  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=NGGPMS " (9958f5bb)
+2018-06-25T23:26:41.8216676+05:45  [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-25T23:26:41.9352019+05:45  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-06-25T23:26:42.0867491+05:45  [INF] Executed DbCommand ("53"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-06-25T23:26:42.4084119+05:45  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-06-25T23:26:42.8604983+05:45  [INF] Executed DbCommand ("101"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-25T23:26:42.9081997+05:45  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppCustomers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-25T23:26:46.4075791+05:45 0HLEQOBL57P5G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-25T23:26:51.4387511+05:45  [INF] > client-app@0.0.0 start F:\ASPDOTNETCORE\NGGPMS\NGGPMS
+> ng serve "--port" "4717"
+
+** Angular Live Development Server is listening on localhost:4717, open your browser on http://localhost:4717/ **
+ (b491b90a)
+2018-06-25T23:26:57.0816073+05:45 0HLEQOBL57P5L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529948517047   (ca22a1cb)
+2018-06-25T23:27:05.1871021+05:45 0HLEQOBL57P5L:00000001 [INF] Request finished in 8103.7129ms 0  (791a596a)
+2018-06-25T23:27:06.3801630+05:45  [INF] i ∩╜ówdm∩╜ú: wait until bundle finished: /
+ (5b9bec14)
+2018-06-25T23:27:21.1474496+05:45  [INF] Date: 2018-06-25T17:42:21.138Z
+Hash: a2c2fe3d47a6c6809811
+Time: 29480ms
+chunk {main} main.js, main.js.map (main) 559 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 487 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 324 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 6.52 MB [initial] [rendered]
+
+ (e5e60bd7)
+2018-06-25T23:27:21.2463505+05:45  [INF] WARNING in ./styles.css
+(Emitted value instead of an instance of Error) autoprefixer: F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\assets\styles\alertify.bootstrap.css:68:5: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+
+WARNING in ./styles.css
+(Emitted value instead of an instance of Error) autoprefixer: F:\ASPDOTNETCORE\NGGPMS\NGGPMS\ClientApp\assets\styles\alertify.bootstrap.css:90:6: Gradient has outdated direction syntax. New syntax is like `to left` instead of `right`.
+
+WARNING in Circular dependency detected:
+ClientApp\app\services\auth.service.ts -> ClientApp\app\services\endpoint-factory.service.ts -> ClientApp\app\services\auth.service.ts
+
+WARNING in Circular dependency detected:
+ClientApp\app\services\endpoint-factory.service.ts -> ClientApp\app\services\auth.service.ts -> ClientApp\app\services\endpoint-factory.service.ts
+i ∩╜ówdm∩╜ú: Compiled with warnings.
+ (5d0f2381)
+2018-06-25T23:27:21.3307754+05:45 0HLEQOBL57P5G:00000001 [INF] Request finished in 34983.1564ms 304  (791a596a)
+2018-06-25T23:27:22.7522627+05:45 0HLEQOBL57P5G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-25T23:27:22.7596997+05:45 0HLEQOBL57P5M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-25T23:27:22.7760970+05:45 0HLEQOBL57P5N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-25T23:27:22.7853828+05:45 0HLEQOBL57P5O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js   (ca22a1cb)
+2018-06-25T23:27:22.7949245+05:45 0HLEQOBL57P5P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-25T23:27:22.8143357+05:45 0HLEQOBL57P5Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-25T23:27:23.3356954+05:45 0HLEQOBL57P5M:00000001 [INF] Request finished in 568.806ms 304  (791a596a)
+2018-06-25T23:27:23.3594136+05:45 0HLEQOBL57P5G:00000002 [INF] Request finished in 572.634ms 304  (791a596a)
+2018-06-25T23:27:23.4047786+05:45 0HLEQOBL57P5R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js.map   (ca22a1cb)
+2018-06-25T23:27:23.5822058+05:45 0HLEQOBL57P5R:00000001 [INF] Request finished in 194.3ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:27:23.6082066+05:45 0HLEQOBL57P5R:00000002 [INF] Request starting HTTP/1.1 HEAD http://localhost:43880/webpack.config.js   (ca22a1cb)
+2018-06-25T23:27:23.6173778+05:45 0HLEQOBL57P5R:00000002 [INF] Request finished in 7.7688ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:27:23.6493684+05:45 0HLEQOBL57P5R:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js.map   (ca22a1cb)
+2018-06-25T23:27:23.6697391+05:45 0HLEQOBL57P5R:00000003 [INF] Request finished in 20.2857ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:27:23.6942801+05:45 0HLEQOBL57P5R:00000004 [INF] Request starting HTTP/1.1 HEAD http://localhost:43880/webpack.config.js   (ca22a1cb)
+2018-06-25T23:27:23.7084476+05:45 0HLEQOBL57P5R:00000004 [INF] Request finished in 7.3853ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:27:23.7923716+05:45 0HLEQOBL57P5N:00000001 [INF] Request finished in 1017.22ms 304  (791a596a)
+2018-06-25T23:27:23.8999371+05:45 0HLEQOBL57P5O:00000001 [INF] Request finished in 1104.7138ms 304  (791a596a)
+2018-06-25T23:27:23.9192246+05:45 0HLEQOBL57P5P:00000001 [INF] Request finished in 1082.2009ms 304  (791a596a)
+2018-06-25T23:27:23.9365223+05:45 0HLEQOBL57P5Q:00000001 [INF] Request finished in 1119.656ms 304  (791a596a)
+2018-06-25T23:27:23.9431353+05:45 0HLEQOBL57P5R:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js.map   (ca22a1cb)
+2018-06-25T23:27:23.9591193+05:45 0HLEQOBL57P5R:00000005 [INF] Request finished in 71.6573ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:27:23.9648615+05:45 0HLEQOBL57P5R:00000006 [INF] Request starting HTTP/1.1 HEAD http://localhost:43880/webpack.config.js   (ca22a1cb)
+2018-06-25T23:27:23.9744944+05:45 0HLEQOBL57P5R:00000006 [INF] Request finished in 8.616ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:27:25.0282695+05:45 0HLEQOBL57P5R:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js.map   (ca22a1cb)
+2018-06-25T23:27:25.0507806+05:45 0HLEQOBL57P5R:00000007 [INF] Request finished in 23.0404ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:27:25.0796229+05:45 0HLEQOBL57P5R:00000008 [INF] Request starting HTTP/1.1 HEAD http://localhost:43880/webpack.config.js   (ca22a1cb)
+2018-06-25T23:27:25.0809993+05:45 0HLEQOBL57P5S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529948545048   (ca22a1cb)
+2018-06-25T23:27:25.0916429+05:45 0HLEQOBL57P5R:00000008 [INF] Request finished in 10.3862ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:27:25.1279985+05:45 0HLEQOBL57P5R:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js.map   (ca22a1cb)
+2018-06-25T23:27:25.1357149+05:45 0HLEQOBL57P5S:00000001 [INF] Request finished in 56.2751ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:27:25.1494012+05:45 0HLEQOBL57P5T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/435/mn5v2wmm/websocket   (ca22a1cb)
+2018-06-25T23:27:25.4002208+05:45 0HLEQOBL57P5R:00000009 [INF] Request finished in 274.4774ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:27:25.4188431+05:45 0HLEQOBL57P5R:0000000A [INF] Request starting HTTP/1.1 HEAD http://localhost:43880/webpack.config.js   (ca22a1cb)
+2018-06-25T23:27:25.4353755+05:45 0HLEQOBL57P5R:0000000A [INF] Request finished in 17.7248ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:27:27.2987510+05:45 0HLEQOBL57P5S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-25T23:27:27.3207830+05:45 0HLEQOBL57P5S:00000002 [INF] Request finished in 14.5328ms 304  (791a596a)
+2018-06-25T23:27:27.3836964+05:45 0HLEQOBL57P5T:00000001 [INF] Request finished in 2219.8814ms 101  (791a596a)
+2018-06-25T23:27:27.5129680+05:45 0HLEQOBL57P5U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-25T23:27:27.5518040+05:45 0HLEQOBL57P5S:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-25T23:27:27.7632699+05:45 0HLEQOBL57P60:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js   (ca22a1cb)
+2018-06-25T23:27:28.1975385+05:45 0HLEQOBL57P5V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-25T23:27:28.3571554+05:45 0HLEQOBL57P62:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-25T23:27:28.3632964+05:45 0HLEQOBL57P5U:00000001 [INF] Request finished in 597.7233ms 304  (791a596a)
+2018-06-25T23:27:28.4040471+05:45 0HLEQOBL57P61:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-25T23:27:28.6233129+05:45 0HLEQOBL57P60:00000001 [INF] Request finished in 986.5182ms 304  (791a596a)
+2018-06-25T23:27:28.6457658+05:45 0HLEQOBL57P5S:00000003 [INF] Request finished in 956.283ms 304  (791a596a)
+2018-06-25T23:27:28.7353667+05:45 0HLEQOBL57P5V:00000001 [INF] Request finished in 1184.2494ms 304  (791a596a)
+2018-06-25T23:27:28.8259357+05:45 0HLEQOBL57P62:00000001 [INF] Request finished in 453.4668ms 304  (791a596a)
+2018-06-25T23:27:28.8877673+05:45 0HLEQOBL57P5Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/i18n/en.json   (ca22a1cb)
+2018-06-25T23:27:28.8909010+05:45 0HLEQOBL57P61:00000001 [INF] Request finished in 426.9726ms 304  (791a596a)
+2018-06-25T23:27:28.9229219+05:45 0HLEQOBL57P63:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-06-25T23:27:28.9604304+05:45 0HLEQOBL57P5R:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js.map   (ca22a1cb)
+2018-06-25T23:27:29.1919971+05:45 0HLEQOBL57P5Q:00000002 [INF] Request finished in 248.3787ms 304  (791a596a)
+2018-06-25T23:27:29.2086372+05:45 0HLEQOBL57P64:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529948548742   (ca22a1cb)
+2018-06-25T23:27:29.2271239+05:45 0HLEQOBL57P63:00000001 [INF] Request finished in 330.017ms 304  (791a596a)
+2018-06-25T23:27:29.3154825+05:45 0HLEQOBL57P64:00000001 [INF] Request finished in 379.3561ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:27:29.3221110+05:45 0HLEQOBL57P65:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/768/0m2ogzje/websocket   (ca22a1cb)
+2018-06-25T23:27:29.3284350+05:45 0HLEQOBL57P5R:0000000B [INF] Request finished in 396.7343ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:27:29.3360906+05:45 0HLEQOBL57P5R:0000000C [INF] Request starting HTTP/1.1 HEAD http://localhost:43880/webpack.config.js   (ca22a1cb)
+2018-06-25T23:27:29.3456154+05:45 0HLEQOBL57P5R:0000000C [INF] Request finished in 9.5137ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:27:31.8038432+05:45 0HLEQOBL57P66:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js.map   (ca22a1cb)
+2018-06-25T23:27:31.8466014+05:45 0HLEQOBL57P6A:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js.map   (ca22a1cb)
+2018-06-25T23:27:31.8635192+05:45 0HLEQOBL57P6B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap-select.css.map   (ca22a1cb)
+2018-06-25T23:27:31.8714068+05:45 0HLEQOBL57P67:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js.map   (ca22a1cb)
+2018-06-25T23:27:31.8852904+05:45 0HLEQOBL57P68:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap.css.map   (ca22a1cb)
+2018-06-25T23:27:31.9294526+05:45 0HLEQOBL57P69:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js.map   (ca22a1cb)
+2018-06-25T23:27:32.0321847+05:45 0HLEQOBL57P6A:00000001 [INF] Request finished in 105.1164ms 304  (791a596a)
+2018-06-25T23:27:32.0729473+05:45 0HLEQOBL57P66:00000001 [INF] Request finished in 188.6245ms 304  (791a596a)
+2018-06-25T23:27:32.1051269+05:45 0HLEQOBL57P67:00000001 [INF] Request finished in 223.6409ms 304  (791a596a)
+2018-06-25T23:27:32.1204523+05:45 0HLEQOBL57P68:00000001 [INF] Request finished in 320.0183ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:27:32.1981709+05:45 0HLEQOBL57P69:00000001 [INF] Request finished in 275.8921ms 304  (791a596a)
+2018-06-25T23:27:32.2248887+05:45 0HLEQOBL57P6B:00000001 [INF] Request finished in 424.6788ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:27:32.2323581+05:45 0HLEQOBL57P6A:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/bootstrap-datepicker3.css.map   (ca22a1cb)
+2018-06-25T23:27:32.2458710+05:45 0HLEQOBL57P6A:00000002 [INF] Request finished in 103.2538ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:27:32.5636013+05:45 0HLEQOBL57P6A:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js.map   (ca22a1cb)
+2018-06-25T23:27:32.5924543+05:45 0HLEQOBL57P6A:00000003 [INF] Request finished in 28.7311ms 304  (791a596a)
+2018-06-25T23:27:35.8416201+05:45 0HLEQOBL57P64:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/x-www-form-urlencoded 151 (ca22a1cb)
+2018-06-25T23:27:35.9227597+05:45 0HLEQOBL57P64:00000002 [INF] Request finished in 80.7258ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:27:35.9676393+05:45 0HLEQOBL57P64:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-06-25T23:27:35.9979833+05:45 0HLEQOBL57P64:00000003 [INF] Request finished in 30.8622ms 200 font/woff2; charset=UTF-8 (791a596a)
+2018-06-25T23:27:38.1624274+05:45 0HLEQOBL57P6A:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js.map   (ca22a1cb)
+2018-06-25T23:27:38.1779047+05:45 0HLEQOBL57P6A:00000004 [INF] Request finished in 13.3177ms 304  (791a596a)
+2018-06-25T23:27:38.2459509+05:45 0HLEQOBL57P6A:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/i18n/en.json   (ca22a1cb)
+2018-06-25T23:27:38.2562114+05:45 0HLEQOBL57P6A:00000005 [INF] Request finished in 9.224ms 304  (791a596a)
+2018-06-25T23:27:38.4684395+05:45 0HLEQOBL57P6A:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:43880/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-06-25T23:27:38.4799159+05:45 0HLEQOBL57P6A:00000006 [INF] Request finished in 9.8195ms 304  (791a596a)
+2018-06-25T23:27:39.1224376+05:45 0HLEQOBL57P6A:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529948559090   (ca22a1cb)
+2018-06-25T23:27:39.1532189+05:45 0HLEQOBL57P6A:00000007 [INF] Request finished in 30.944ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:27:39.1755976+05:45 0HLEQOBL57P6C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/476/j2czibqv/websocket   (ca22a1cb)
+2018-06-25T23:28:11.9042731+05:45 0HLEQOBL57P6D:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/api/token   (ca22a1cb)
+2018-06-25T23:28:12.9274669+05:45 0HLEQOBL57P6D:00000001 [INF] Request finished in 1018.5333ms 200 text/html; charset=UTF-8 (791a596a)
+2018-06-25T23:28:13.0159273+05:45 0HLEQOBL57P65:00000001 [INF] Request finished in 43666.9029ms 101  (791a596a)
+2018-06-25T23:28:13.0299437+05:45 0HLEQOBL57P6G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-25T23:28:13.0602006+05:45 0HLEQOBL57P6E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-25T23:28:13.0865900+05:45 0HLEQOBL57P6H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-25T23:28:13.0902798+05:45 0HLEQOBL57P6D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-25T23:28:13.0936837+05:45 0HLEQOBL57P6F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js   (ca22a1cb)
+2018-06-25T23:28:13.1028874+05:45 0HLEQOBL57P6I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-25T23:28:13.1363394+05:45 0HLEQOBL57P6E:00000001 [INF] Request finished in 91.6547ms 304  (791a596a)
+2018-06-25T23:28:13.1445074+05:45 0HLEQOBL57P6G:00000001 [INF] Request finished in 87.76ms 304  (791a596a)
+2018-06-25T23:28:13.1787420+05:45 0HLEQOBL57P6H:00000001 [INF] Request finished in 111.4271ms 304  (791a596a)
+2018-06-25T23:28:13.1946492+05:45 0HLEQOBL57P6F:00000001 [INF] Request finished in 95.6644ms 304  (791a596a)
+2018-06-25T23:28:13.2074079+05:45 0HLEQOBL57P6I:00000001 [INF] Request finished in 109.3098ms 304  (791a596a)
+2018-06-25T23:28:14.1152287+05:45 0HLEQOBL57P6D:00000002 [INF] Request finished in 1119.1969ms 304  (791a596a)
+2018-06-25T23:28:17.5665724+05:45 0HLEQOBL57P6D:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/i18n/en.json   (ca22a1cb)
+2018-06-25T23:28:17.6191071+05:45 0HLEQOBL57P6D:00000003 [INF] Request finished in 34.1982ms 304  (791a596a)
+2018-06-25T23:28:22.5395022+05:45 0HLEQOBL57P6J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/   (ca22a1cb)
+2018-06-25T23:28:22.5473480+05:45 0HLEQOBL57P6K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529948602508   (ca22a1cb)
+2018-06-25T23:28:22.6679836+05:45 0HLEQOBL57P6J:00000001 [INF] Request finished in 129.1698ms 304  (791a596a)
+2018-06-25T23:28:22.6896507+05:45 0HLEQOBL57P6K:00000001 [INF] Request finished in 126.8027ms 0 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:28:22.7245321+05:45 0HLEQOBL57P6J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-25T23:28:22.7262614+05:45 0HLEQOBL57P6L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-25T23:28:22.7531450+05:45 0HLEQOBL57P6M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-25T23:28:22.7549392+05:45 0HLEQOBL57P6N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-25T23:28:22.7813214+05:45 0HLEQOBL57P6O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js   (ca22a1cb)
+2018-06-25T23:28:22.8043334+05:45 0HLEQOBL57P6P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-25T23:28:23.7507529+05:45 0HLEQOBL57P6L:00000001 [INF] Request finished in 1018.9328ms 304  (791a596a)
+2018-06-25T23:28:23.7847081+05:45 0HLEQOBL57P6J:00000002 [INF] Request finished in 1057.0835ms 304  (791a596a)
+2018-06-25T23:28:23.8249232+05:45 0HLEQOBL57P6M:00000001 [INF] Request finished in 1093.496ms 304  (791a596a)
+2018-06-25T23:28:23.8485339+05:45 0HLEQOBL57P6N:00000001 [INF] Request finished in 1096.8551ms 304  (791a596a)
+2018-06-25T23:28:23.8760134+05:45 0HLEQOBL57P6O:00000001 [INF] Request finished in 1104.9378ms 304  (791a596a)
+2018-06-25T23:28:23.8882112+05:45 0HLEQOBL57P6P:00000001 [INF] Request finished in 1118.3858ms 304  (791a596a)
+2018-06-25T23:28:36.0547153+05:45 0HLEQOBL57P6P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529948616047   (ca22a1cb)
+2018-06-25T23:28:37.3651554+05:45 0HLEQOBL57P6P:00000002 [INF] Request finished in 1308.9548ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:28:37.3871750+05:45 0HLEQOBL57P6Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/472/njg3opb2/websocket   (ca22a1cb)
+2018-06-25T23:29:00.8719303+05:45 0HLEQOBL57P6P:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/connect/token   (ca22a1cb)
+2018-06-25T23:29:01.8900419+05:45 0HLEQOBL57P6P:00000003 [INF] Request finished in 1024.7493ms 200 text/html; charset=UTF-8 (791a596a)
+2018-06-25T23:29:01.9370908+05:45 0HLEQOBL57P6P:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/runtime.js   (ca22a1cb)
+2018-06-25T23:29:01.9460500+05:45 0HLEQOBL57P6N:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/styles.js   (ca22a1cb)
+2018-06-25T23:29:01.9512712+05:45 0HLEQOBL57P6O:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/polyfills.js   (ca22a1cb)
+2018-06-25T23:29:01.9546112+05:45 0HLEQOBL57P6M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/scripts.js   (ca22a1cb)
+2018-06-25T23:29:01.9828064+05:45 0HLEQOBL57P6J:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/vendor.js   (ca22a1cb)
+2018-06-25T23:29:02.0065642+05:45 0HLEQOBL57P6L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:43880/main.js   (ca22a1cb)
+2018-06-25T23:29:02.0392673+05:45 0HLEQOBL57P6P:00000004 [INF] Request finished in 106.8413ms 304  (791a596a)
+2018-06-25T23:29:02.0509256+05:45 0HLEQOBL57P6O:00000002 [INF] Request finished in 113.3467ms 304  (791a596a)
+2018-06-25T23:29:02.0854452+05:45 0HLEQOBL57P6N:00000002 [INF] Request finished in 115.9302ms 304  (791a596a)
+2018-06-25T23:29:02.1248300+05:45 0HLEQOBL57P6J:00000003 [INF] Request finished in 161.5729ms 304  (791a596a)
+2018-06-25T23:29:02.9739726+05:45 0HLEQOBL57P6M:00000002 [INF] Request finished in 1016.2853ms 304  (791a596a)
+2018-06-25T23:29:03.0286153+05:45 0HLEQOBL57P6L:00000002 [INF] Request finished in 1066.2546ms 304  (791a596a)
+2018-06-25T23:29:05.4343306+05:45 0HLEQOBL57P6L:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:43880/assets/i18n/en.json   (ca22a1cb)
+2018-06-25T23:29:05.4455728+05:45 0HLEQOBL57P6L:00000003 [INF] Request finished in 8.3297ms 304  (791a596a)
+2018-06-25T23:29:15.0549935+05:45 0HLEQOBL57P6L:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/info?t=1529948655049   (ca22a1cb)
+2018-06-25T23:29:16.0824634+05:45 0HLEQOBL57P6L:00000004 [INF] Request finished in 1027.0382ms 200 application/json; charset=UTF-8 (791a596a)
+2018-06-25T23:29:16.0914824+05:45 0HLEQOBL57P6R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:43880/sockjs-node/805/nagdmh5p/websocket   (ca22a1cb)
+2018-06-25T23:30:40.0195460+05:45 0HLEQOBL57P6T:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token multipart/form-data; boundary=--------------------------331186339229300486980787 691 (ca22a1cb)
+2018-06-25T23:30:41.0444122+05:45 0HLEQOBL57P6T:00000001 [INF] Request finished in 1024.6288ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:31:01.2859834+05:45 0HLEQOBL57P6T:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/json 0 (ca22a1cb)
+2018-06-25T23:31:02.3090252+05:45 0HLEQOBL57P6T:00000002 [INF] Request finished in 1024.6462ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:31:18.8845980+05:45 0HLEQOBL57P6T:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:43880/connect/token application/json 0 (ca22a1cb)
+2018-06-25T23:31:19.9096749+05:45 0HLEQOBL57P6T:00000003 [INF] Request finished in 1024.9137ms 404 text/html; charset=utf-8 (791a596a)
+2018-06-25T23:53:25.0609406+05:45 0HLEQOBL57P6C:00000001 [INF] Request finished in 1545885.3692ms 101  (791a596a)
